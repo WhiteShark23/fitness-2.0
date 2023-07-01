@@ -1,0 +1,27 @@
+.header-list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--position {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+  }
+
+  a {
+    font-family:  $ff-sans-mini;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: $color-default-white;
+  }
+
+  a[type="tel"] {
+    font-size: 26px;
+    line-height: 31px;
+  }
+}

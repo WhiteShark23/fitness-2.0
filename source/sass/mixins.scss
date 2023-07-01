@@ -1,3 +1,18 @@
+@mixin reset-style {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-list {
+  @include reset-style;
+  list-style: none;
+}
+
+@mixin font-reset {
+  font-size: 0;
+  line-height: 0;
+}
+
 @mixin retina {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     @content;
@@ -50,8 +65,8 @@
   }
 }
 
-@mixin vp-1279 {
-  @media (max-width: ($vp-1280 - 1px)) {
+@mixin vp-1999 {
+  @media (max-width: ($vp-1200 - 1px)) {
     @content;
   }
 }

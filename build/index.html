@@ -4,23 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <meta name="description" content="Спорт это жизнь.">
+    <title>Фитнес 2.0</title>
+    <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png"> -->
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <div class="container"></div>
+        <div class="container">
+          <ul class="header-list header-list--position">
+            <li class="header-list__item">
+              <a href="#nowhere">SUPERGYM</a>
+            </li>
+            <li class="header-list__item">
+              <a href="tel:+7(880)5555555" type="tel">8-800-555-55-55</a>
+            </li>
+          </ul>
+        </div>
       </header>
       <main>
         <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+          <div class="container container--hero">
+            <div class="hero-block hero-block--padding">
+              <div class="hero-block__info">
+                <p>Омск</p>
+                <h1>Фитнес центр</h1>
+                <button class="btn btn--hero" type="button">Купить абонемент</button>
+              </div>
+              <div class="hero-block__img">
+                <picture>
+                  <!-- <source type="image/webp" srcset="img/superman.webp 1x, img/superman@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/superman-tablet.webp 1x, img/superman-tablet@2x.webp 2x"> -->
+                  <img src="img/superman.jpg" srcset="img/superman@2x.jpg 2x" alt="Здоровый мужик в футболке супермена." width="500" height="556">
+                  <source media="(max-width: 767px)" srcset="img/superman-tablet.jpg 1x, img/superman-tablet@2x.jpg 2x">
+                </picture>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -29,7 +54,7 @@
       </footer>
     </div>
 
-    <!-- Модалки -->
+    <!-- Модалки
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -56,7 +81,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

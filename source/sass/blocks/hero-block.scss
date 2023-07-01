@@ -1,0 +1,42 @@
+.hero-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-default-white;
+
+  &--padding {
+    padding: 51px 0;
+  }
+}
+
+.hero-block__info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  width: 298px;
+  margin-right: 64px;
+
+  p {
+    @include reset-style;
+
+    font-family: $ff-sans-mini;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 57px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  h1 {
+    @include reset-style;
+
+    font-family: $ff-sans-mini;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    text-align: end;
+    font-weight: 600;
+    font-size: 92px;
+    line-height: 110px;
+  }
+}
