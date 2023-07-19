@@ -1,0 +1,74 @@
+.faq {
+  background-color: $color-ghost-white;
+
+  &--padding {
+    padding: 120px 0;
+  }
+
+  h2 {
+    @include reset-style;
+
+    display: block;
+    font-family: $ff-sans-mini;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 64.8px;
+    letter-spacing: 1.62px;
+    margin-bottom: 39px;
+    text-align: start;
+  }
+}
+
+.faq__tabs {
+  display: flex;
+  gap: 40px;
+}
+
+.faq__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tabs__content {
+  flex-grow: 1;
+}
+
+.faq__content-list {
+ @include reset-list;
+}
+
+.faq__content-item {
+  @include reset-style;
+  border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+  padding: 25px 0;
+
+  &:first-child {
+    border-top: 1px solid rgba(28, 51, 116, 0.20);
+  }
+}
+
+.faq__content-title {
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    @include reset-style;
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+  }
+}
+
+.accordion__wrapper {
+  @include reset-style;
+
+  p {
+    @include reset-style;
+
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 14px;
+  }
+}

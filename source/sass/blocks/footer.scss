@@ -1,0 +1,62 @@
+.footer {
+  padding: 41px 0 32px;
+
+  &--background {
+    background-color: $color-black-russian;
+  }
+
+  @include vp-1199 {
+    padding: 45px 0 44px;
+  }
+
+  @include vp-767 {
+    padding: 50px 0 52px;
+  }
+}
+
+.footer__list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-767 {
+    position: relative;
+    flex-direction: column;
+  }
+}
+
+.footer__item {
+  @include font-reset;
+
+  @include vp-1199 {
+    &--logo {
+      svg {
+        width: 82px;
+        height: 18px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    &--logo {
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 68px;
+        height: 15px;
+      }
+    }
+
+    &--nav {
+      margin-right: auto;
+      margin-bottom: 40px;
+    }
+
+    &--social {
+      margin-right: auto;
+    }
+  }
+}

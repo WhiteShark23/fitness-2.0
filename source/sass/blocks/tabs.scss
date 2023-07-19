@@ -1,0 +1,19 @@
+.tabs__content {
+  @include reset-list;
+
+  transition: height 0.3s;
+}
+
+.tabs__element {
+  width: 100%;
+}
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

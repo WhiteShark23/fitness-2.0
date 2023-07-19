@@ -34,19 +34,19 @@
 }
 
 @mixin active {
-  &.focus-visible:active {
+  &:active {
     @content;
   }
 }
 
 @mixin hover-focus {
   @media (hover: hover) {
-    &:hover:not(.focus-visible) {
+    &:hover {
       @content;
     }
   }
 
-  &.focus-visible:focus {
+  &:focus {
     @content;
   }
 }
@@ -65,7 +65,7 @@
   }
 }
 
-@mixin vp-1999 {
+@mixin vp-1199 {
   @media (max-width: ($vp-1200 - 1px)) {
     @content;
   }

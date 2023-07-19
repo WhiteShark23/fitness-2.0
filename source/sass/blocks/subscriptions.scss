@@ -1,0 +1,134 @@
+.subscriptions {
+  position: relative;
+  background-color: $color-ghost-white;
+  background-image: url("/img/chips.png");
+  background-repeat: no-repeat;
+  background-position: right 0 bottom -11px;
+
+  &--padding {
+    padding: 120px 0;
+    margin-bottom: 120px;
+  }
+
+  h2 {
+    @include reset-style;
+    font-family: $ff-sans-mini;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 64px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+.subscriptions__tabs {
+  max-width: 100%;
+}
+
+.subscriptions__tabs-controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 341px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 39px;
+  padding-bottom: 20px;
+
+  ::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border: $color-grey solid 1px;
+    opacity: 0.2;
+  }
+
+  @include vp-1199 {
+    flex-wrap: wrap;
+  }
+}
+
+.subscriptions__tabs-control {
+  @include reset-style;
+
+  cursor: pointer;
+  min-width: auto;
+  border: none;
+  background-color: inherit;
+  color: $color-sapphire;
+  opacity: 0.5;
+  font-size: 20px;
+  line-height: 30px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: none;
+  }
+}
+
+.subscriptions__tabs-content {
+  margin-bottom: 40px;
+}
+
+.subscriptions__list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscriptions__item {
+  @include reset-style;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-default-white;
+  padding: 68px 77px;
+
+  h3 {
+    @include reset-style;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 22px;
+  }
+
+  p {
+    @include reset-style;
+
+    margin-bottom: 59px;
+  }
+}
+
+.subscriptions__price {
+  p {
+    z-index: 2;
+    position: relative;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90px;
+    color: $color-egyptian-blue;
+    padding-top: 27px;
+
+    span {
+      font-family: $ff-rouble;
+      color: $color-sapphire;
+    }
+  }
+}

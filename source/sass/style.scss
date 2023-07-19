@@ -14,6 +14,8 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/data-tabs.scss";
+@import "global/data-accordion.scss";
 
 // Blocks
 // ---------------------------------
@@ -25,7 +27,22 @@
 @import "blocks/custom-select";
 @import "blocks/header-list.scss";
 @import "blocks/hero-block.scss";
-@import "blocks/intro.scss"
+@import "blocks/intro.scss";
+@import "blocks/footer.scss";
+@import "blocks/navigation.scss";
+@import "blocks/social.scss";
+@import "blocks/tabs.scss";
+@import "blocks/subscriptions.scss";
+@import "blocks/gym.scss";
+@import "blocks/competition.scss";
+@import "vendor/swiper.scss";
+@import "blocks/treners.scss";
+@import "blocks/advantages.scss";
+@import "blocks/stock.scss";
+@import "blocks/accordion.scss";
+@import "blocks/faq.scss";
+@import "blocks/connection.scss";
+
 
 // ---------------------------------
 

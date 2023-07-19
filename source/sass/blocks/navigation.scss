@@ -1,0 +1,52 @@
+.navigation__list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 431px;
+
+  @include vp-1199 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    display: grid;
+    justify-content: start;
+    grid-template-areas: ". stock"
+      "services trainers"
+      "subscriptions schedule";
+    gap: 30px 71px;
+  }
+}
+
+.navigation__item {
+  a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
+  }
+
+  @include vp-767 {
+    &--services {
+      grid-area: services;
+    }
+
+    &--subscriptions {
+      grid-area: subscriptions;
+    }
+
+    &--stock {
+      grid-area: stock;
+    }
+
+    &--trainers {
+      grid-area: trainers;
+    }
+
+    &--schedule {
+      grid-area: schedule;
+    }
+  }
+}

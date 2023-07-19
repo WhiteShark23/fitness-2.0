@@ -1,3 +1,17 @@
 .intro {
-  background-color: brown;
+  &--background {
+    background-image: conic-gradient(from 130.31deg at 16% 39%,
+    $color-venetian-red -46.69deg,
+    $color-dark-cerulean 32.24deg,
+    $color-venetian-red 313.31deg,
+    $color-dark-cerulean 392.24deg);
+
+    @include vp-1199 {
+      background-image: conic-gradient(from 130.31deg at 21% 36%,
+      $color-venetian-red -46.69deg,
+      $color-dark-cerulean 32.24deg,
+      $color-venetian-red 313.31deg,
+      $color-dark-cerulean 392.24deg);
+    }
+  }
 }

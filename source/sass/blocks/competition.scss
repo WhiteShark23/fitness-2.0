@@ -1,0 +1,151 @@
+.competition {
+  &--position {
+    margin-bottom: 106px;
+  }
+}
+
+.competition__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.competition__time {
+  display: grid;
+  grid-template-areas: "title time"
+  "row row";
+  gap: 29px 50px;
+  display: flex;
+  background-color: $color-torch-red;
+  color: $color-default-white;
+  padding: 82px 79px 78px 77px;
+
+  @include vp-1199 {
+    padding: 51px 45px;
+    gap: 15px 29px;
+  }
+}
+
+.competition__row {
+  grid-area: row;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.competition__title {
+  @include reset-style;
+
+  grid-area: title;
+  align-self: center;
+  font-family: $ff-sans-mini;
+  font-size: 82px;
+  line-height: 78.72px;
+  letter-spacing: 2.46px;
+  width: 201px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include vp-1199 {
+    width: 117px;
+    letter-spacing: 1.44px;
+    font-size: 48px;
+    line-height: 46.08px;
+  }
+}
+
+.competition__date-wrapper {
+  grid-area: time;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+
+  @include vp-1199 {
+    gap: 14px;
+  }
+}
+
+.competition__date {
+  h3 {
+    @include reset-style;
+
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 6px;
+
+    @include vp-1199 {
+      font-size: 12px;
+      margin-bottom: 7px;
+      line-height: 9px;
+    }
+  }
+
+  p {
+    @include reset-style;
+
+    font-weight: 700;
+    font-size: 40px;
+    border-top: 1px solid $color-default-white;
+    padding-top: 12px;
+
+    @include vp-1199 {
+      font-size: 24px;
+      padding-top: 5px;
+    }
+  }
+
+  span {
+    position: absolute;
+    width: 37px;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 7px;
+    top: 6px;
+
+    @include vp-1199 {
+      font-size: 10px;
+      line-height: 11px;
+    }
+  }
+
+  &--position {
+    p {
+      position: relative;
+      display: inline-block;
+      padding-right: 43px;
+
+      @include vp-1199 {
+        padding-right: 34px;
+        padding-top: 6px;
+      }
+    }
+  }
+}
+
+.competition__row {
+  p {
+    @include reset-style;
+
+    font-size: 18px;
+    align-self: self-start;
+    margin-bottom: 47px;
+
+    @include vp-1199 {
+      font-size: 12px;
+      margin-bottom: 36px;
+    }
+  }
+}
+
+.competition__img {
+  img {
+    @include vp-1199 {
+      width: 386px;
+    }
+
+    @include vp-767 {
+      width: 290px;
+    }
+  }
+}

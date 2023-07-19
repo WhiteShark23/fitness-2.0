@@ -1,0 +1,8 @@
+.social {
+  @include reset-list;
+  @include font-reset;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11px;
+}
