@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/swiper.scss";
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
@@ -20,7 +21,6 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
 @import "blocks/modal";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
@@ -35,14 +35,14 @@
 @import "blocks/subscriptions.scss";
 @import "blocks/gym.scss";
 @import "blocks/competition.scss";
-@import "vendor/swiper.scss";
 @import "blocks/treners.scss";
 @import "blocks/advantages.scss";
 @import "blocks/stock.scss";
 @import "blocks/accordion.scss";
 @import "blocks/faq.scss";
 @import "blocks/connection.scss";
-
+@import "blocks/reviews.scss";
+@import "blocks/btn";
 
 // ---------------------------------
 

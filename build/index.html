@@ -98,6 +98,7 @@
                       <p>12 занятий</p>
                       <div class="subscriptions__price">
                         <p>5000 <span> ₽</span></p>
+                        <b>5000</b>
                       </div>
                       <button class="btn btn--subscriptions" type="button">купить абонемент</button>
                     </li>
@@ -105,7 +106,8 @@
                       <h3>Дневной</h3>
                       <p>с 8:00 до 17:00</p>
                       <div class="subscriptions__price">
-                        <p>1700 <span> ₽</span></p>
+                          <p>1700 <span> ₽</span></p>
+                          <b>1700</b>
                       </div>
                       <button class="btn btn--subscriptions" type="button">купить абонемент</button>
                     </li>
@@ -114,6 +116,7 @@
                       <p>с 8:00 до 22:00 </p>
                       <div class="subscriptions__price">
                         <p>2700 <span> ₽</span></p>
+                        <b>2700</b>
                       </div>
                       <button class="btn btn--subscriptions" type="button">купить абонемент</button>
                     </li>
@@ -121,16 +124,64 @@
                 </li>
                 <li class="tabs__element" data-tabs="element">
                   <ul class="subscriptions__list">
-                    <li>11</li>
-                    <li>22</li>
-                    <li>33</li>
+                    <li class="subscriptions__item">
+                      <h3>С тренером</h3>
+                      <p>22 занятий</p>
+                      <div class="subscriptions__price">
+                        <p>7000 <span> ₽</span></p>
+                        <b>7000</b>
+                      </div>
+                      <button class="btn btn--subscriptions" type="button">купить абонемент</button>
+                    </li>
+                    <li class="subscriptions__item">
+                      <h3>Ночной</h3>
+                      <p>с 1:00 до 7:00</p>
+                      <div class="subscriptions__price">
+                          <p>1200 <span> ₽</span></p>
+                          <b>1200</b>
+                      </div>
+                      <button class="btn btn--subscriptions" type="button">купить абонемент</button>
+                    </li>
+                    <li class="subscriptions__item">
+                      <h3>Полная ночь</h3>
+                      <p>с 8:00 до 22:00 </p>
+                      <div class="subscriptions__price">
+                        <p>2599 <span> ₽</span></p>
+                        <b>2599</b>
+                      </div>
+                      <button class="btn btn--subscriptions" type="button">купить абонемент</button>
+                    </li>
                   </ul>
                 </li>
                 <li class="tabs__element" data-tabs="element">
                   <ul class="subscriptions__list">
-                    <li>111</li>
-                    <li>222</li>
-                    <li>333</li>
+                    <li class="subscriptions__item">
+                      <h3>С тренером</h3>
+                      <p>51 занятие</p>
+                      <div class="subscriptions__price">
+                        <p>30000 <span> ₽</span></p>
+                        <b>30000</b>
+                      </div>
+                      <button class="btn btn--subscriptions" type="button">купить абонемент</button>
+                    </li>
+                    <li class="subscriptions__item">
+                      <h3>Купить зал</h3>
+                      <p>На год он ваш за</p>
+                      <div class="subscriptions__price">
+                          <p>10000 <span> ₽</span></p>
+                          <b>10000</b>
+                      </div>
+                      <button class="btn btn--subscriptions" type="button">купить абонемент</button>
+                    </li>
+                    <li class="subscriptions__item">
+                      <h3>Полная ночь</h3>
+                      <p>Живите тут</p>
+                      <div class="subscriptions__price">
+                        <p>52499 <span> ₽</span></p>
+                        <b>52499</b>
+                      </div>
+                      <button class="btn btn--subscriptions" type="button">купить абонемент</button>
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -148,8 +199,8 @@
                     <p><time datetime="2019-03-07">7 <span>Марта 2019</span></time></p>
                   </div>
                   <div class="competition__date">
-                   <h3>Время</h3>
-                   <p><time datetime="12:00">12:00</time></p>
+                    <h3>Время</h3>
+                    <p><time datetime="12:00">12:00</time></p>
                   </div>
                 </div>
                 <div class="competition__row">
@@ -173,7 +224,7 @@
         <section class="treners treners--margin">
           <div class="container">
             <h2>Тренеры</h2>
-            <div class="swiper">
+            <div class="swiper swiper-first">
               <div class="swiper-wrapper treners__list">
                 <div class="swiper-slide treners__item">
                   <div class="treners__img">
@@ -338,7 +389,7 @@
             <h2>Наши преимущества</h2>
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--square">
-                <div class="advantages__number">
+                <div class="advantages__number advantages__number--push-left">
                   <p>900</p>
                   <span>кв/м</span>
                 </div>
@@ -352,7 +403,7 @@
                   <p>70</p>
                   <span>машин</span>
                 </div>
-                <div class="advantages__text">
+                <div class="advantages__text advantages__text--parking">
                   <h3>Собственная парковка</h3>
                   <p>Вы всегда найдете место для своей машины на нашей парковке</p>
                 </div>
@@ -367,11 +418,11 @@
                 </div>
               </li>
               <li class="advantages__item advantages__item--comfort">
-                <div class="advantages__number">
+                <div class="advantages__number advantages__number--push-left">
                   <p>350</p>
                   <span>мест</span>
                 </div>
-                <div class="advantages__text">
+                <div class="advantages__text advantages__text--push-bottom">
                   <h3>Комфорт</h3>
                   <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                 </div>
@@ -381,7 +432,7 @@
                   <p>5+</p>
                   <span>лет</span>
                 </div>
-                <div class="advantages__text">
+                <div class="advantages__text advantages__text--push-bottom">
                   <h3>Тренерский опыт</h3>
                   <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
                 </div>
@@ -414,12 +465,12 @@
               <div class="stock__coupon">
                 <div class="stock__coupon-wrapper">
                   <span>Месяц бесплатно</span>
-                  <p>Приведи друга, получи абонемент в подарок</p>
+                  <p>Приведи друга, получи <br> абонемент в подарок</p>
                   <a class="stock__link stock__link--coupon" href="#nowhere">подробнее</a>
                 </div>
-                <div class="stock__coupon-wrapper">
+                <div class="stock__coupon-wrapper stock__coupon-wrapper--possition">
                   <span>Скидка 20%</span>
-                  <p>Корпоративный фитнес  с командой</p>
+                  <p>Корпоративный фитнес с командой</p>
                   <a class="stock__link stock__link--coupon" href="#nowhere">подробнее</a>
                 </div>
               </div>
@@ -579,7 +630,7 @@
                   <ul class="faq__content-list accordion" data-accordion="parent" data-single data-close-inner>
                     <li class="faq__content-item accordion__element"  data-accordion="element">
                       <div class="faq__content-title">
-                        <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
+                        <h3>Предлагает ли клуб услуги <br> по консультированию <br> по вопросам питания?</h3>
                         <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">
                           <span></span>
                           <span></span>
@@ -717,6 +768,33 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </section>
+        <section class="reviews reviews--padding">
+          <div class="container">
+            <div class="swiper swiper-last reviews__swiper">
+              <h2>Отзывы</h2>
+              <div class="swiper-wrapper reviews__list">
+                <div class="swiper-slide reviews__item">
+                  <img src="img/anna-orlova-review.png" srcset="img/anna-orlova-review@2x.png 2x" alt="Клиент." width="80" height="80">
+                  <h3>Анна Орлова</h3>
+                  <p>
+                    «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
+                    тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                  </p>
+                </div>
+                <div class="swiper-slide reviews__item">
+                  <img src="img/anna-orlova-review.png" srcset="img/anna-orlova-review@2x.png 2x" alt="Клиент." width="80" height="80">
+                  <h3>Анна Орлова</h3>
+                  <p>
+                    «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
+                    тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev reviews__btn reviews__btn--prew"></div>
+            <div class="swiper-button-next reviews__btn reviews__btn--next"></div>
           </div>
         </section>
         <section class="connection">

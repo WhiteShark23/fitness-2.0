@@ -1,6 +1,14 @@
 .competition {
   &--position {
     margin-bottom: 106px;
+
+    @include vp-1199 {
+      margin-bottom: 100px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 58px;
+    }
   }
 }
 
@@ -13,16 +21,19 @@
 .competition__time {
   display: grid;
   grid-template-areas: "title time"
-  "row row";
+    "row row";
   gap: 29px 50px;
-  display: flex;
   background-color: $color-torch-red;
   color: $color-default-white;
   padding: 82px 79px 78px 77px;
 
   @include vp-1199 {
-    padding: 51px 45px;
-    gap: 15px 29px;
+    padding: 43px 45px;
+    gap: 0 29px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 47px;
   }
 }
 
@@ -31,6 +42,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  p {
+    @include reset-style;
+
+    font-size: 18px;
+    align-self: self-start;
+    margin-bottom: 47px;
+
+    @include vp-1199 {
+      margin-top: -6px;
+      font-size: 12px;
+      margin-bottom: 28px;
+    }
+
+    @include vp-767 {
+      margin-top: 2px;
+    }
+  }
 }
 
 .competition__title {
@@ -61,7 +90,8 @@
   gap: 21px;
 
   @include vp-1199 {
-    gap: 14px;
+    gap: 8px;
+    padding-top: 7px;
   }
 }
 
@@ -75,7 +105,7 @@
 
     @include vp-1199 {
       font-size: 12px;
-      margin-bottom: 7px;
+      margin-bottom: 6px;
       line-height: 9px;
     }
   }
@@ -106,6 +136,8 @@
     @include vp-1199 {
       font-size: 10px;
       line-height: 11px;
+      margin-left: 3px;
+      margin-top: -3px;
     }
   }
 
@@ -116,24 +148,9 @@
       padding-right: 43px;
 
       @include vp-1199 {
-        padding-right: 34px;
-        padding-top: 6px;
+        padding-top: 3px;
+        padding-right: 29px;
       }
-    }
-  }
-}
-
-.competition__row {
-  p {
-    @include reset-style;
-
-    font-size: 18px;
-    align-self: self-start;
-    margin-bottom: 47px;
-
-    @include vp-1199 {
-      font-size: 12px;
-      margin-bottom: 36px;
     }
   }
 }

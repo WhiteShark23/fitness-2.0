@@ -1,5 +1,5 @@
-export const initSwiper = () => {
-  const swiper = new window.Swiper('.swiper', {
+export const initSwiperFirst = () => {
+  const swiperFirst = new window.Swiper('.swiper-first', {
     direction: 'horizontal',
     breakpoints: {
       320: {
@@ -21,5 +21,17 @@ export const initSwiper = () => {
     },
   });
 
-  return swiper;
+  return swiperFirst;
+};
+
+export const initSwiperLast = () => {
+  const swiperLast = new window.Swiper('.swiper-last', {
+    direction: 'horizontal',
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  return swiperLast;
 };

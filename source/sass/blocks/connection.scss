@@ -1,17 +1,57 @@
 .connection {
+  position: relative;
   background-image: linear-gradient(90deg, $color-sapphire 50%, $color-default-white 50%);
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 1px;
+    background-color: $color-light-slate-grey;
+  }
+
+  @include vp-1199 {
+    background-image: linear-gradient(180deg, $color-sapphire 48%, $color-default-white 48%);
+    &::after {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    background-image: linear-gradient(180deg, $color-sapphire 43%, $color-default-white 43%);
+  }
 }
 
 .connection__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @include vp-1199 {
+   flex-direction: column;
+  }
 }
 
 .connection__form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   color: $color-default-white;
   width: 50%;
-  padding: 56px 0 70px 83px;
+  padding: 56px 0 68px;
   align-self: flex-start;
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 45px 20px 59px 88px;
+  }
+
+  @include vp-767 {
+    padding: 65px 0;
+  }
+
 
   h2 {
     @include reset-style;
@@ -20,14 +60,93 @@
     font-size: 54px;
     font-weight: 800;
     line-height: 84.24px;
-    letter-spacing: 1.62px;
-    margin-bottom: 24px;
+    letter-spacing: 2.4px;
+    margin-bottom: 11px;
+    -webkit-text-stroke: 1px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      letter-spacing: 1.26px;
+      -webkit-text-stroke: 0;
+    }
+
+    @include vp-767 {
+      line-height: 38.4px;
+      letter-spacing: 0.96px;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.connection__form-input {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 26px;
+
+  @include vp-1199 {
+    gap: 61px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+    margin-bottom: 35px;
+  }
+
+  input {
+    font-size: 14px;
+    outline: none;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid $color-light-slate-grey;
+    width: 190px;
+    padding: 9px 15px;
+    padding-left: 0;
+
+    @include vp-1199 {
+      width: 206px;
+    }
+
+    @include vp-767 {
+      width: 290px;
+    }
+
+    &::placeholder {
+      color: $color-default-white;
+    }
+
+    @include hover {
+      border-color: $color-default-white;
+    }
+
+    @include active {
+      border: 1px solid $color-default-white;
+      padding-left: 15px;
+    }
+
+    @include focus {
+      border: 1px solid $color-default-white;
+      padding-left: 15px;
+    }
   }
 }
 
 .connection__contacts {
   width: 50%;
-  padding: 56px 0 70px 120px;
+  padding: 56px 0 60px 120px;
+
+  @include vp-1199 {
+    padding: 62px 0 64px 88px;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+    width: 100%;
+  }
 
   h2 {
     @include reset-style;
@@ -37,5 +156,98 @@
     font-weight: 600;
     line-height: 64.8px;
     letter-spacing: 1.62px;
+    margin-bottom: 36px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      letter-spacing: 1.26px;
+      margin-bottom: 29px;
+    }
+
+    @include vp-767 {
+      letter-spacing: 0.96px;
+      font-size: 32px;
+      line-height: 29.4px;
+      margin-bottom: 42px;
+    }
+  }
+}
+
+.connection__list {
+  @include reset-list;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px 69px;
+  max-height: 140px;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 88%;
+    background-color: $color-light-slate-grey;
+    top: 7px;
+    left: 51%;
+    transform: translate(-50%);
+  }
+
+  @include vp-1199 {
+    gap: 23px 97px;
+
+    &::after {
+      left: 106%;
+    }
+  }
+
+  @include vp-767 {
+    max-height: none;
+    gap: 25px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.connection__item {
+  h3 {
+    @include reset-style;
+
+    font-size: 16px;
+    margin-bottom: 2px;
+
+    @include vp-1199 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 21.33px;
+
+    @include vp-1199 {
+      font-size: 18px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+
+  p {
+    @include reset-style;
+
+    font-size: 14px;
+    line-height: 21.33px;
+
+    @include vp-1199 {
+      font-size: 18px;;
+    }
   }
 }
