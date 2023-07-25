@@ -15,6 +15,7 @@
 
   @include vp-1199 {
     background-image: linear-gradient(180deg, $color-sapphire 48%, $color-default-white 48%);
+
     &::after {
       display: none;
     }
@@ -30,7 +31,7 @@
   justify-content: space-between;
 
   @include vp-1199 {
-   flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -224,7 +225,6 @@
       font-size: 20px;
       margin-bottom: 10px;
     }
-
   }
 
   a {
@@ -247,7 +247,7 @@
     line-height: 21.33px;
 
     @include vp-1199 {
-      font-size: 18px;;
+      font-size: 18px;
     }
   }
 }
