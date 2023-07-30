@@ -2759,8 +2759,8 @@ button,
   pointer-events: none;
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  -webkit-text-decoration-color: #ED0233;
-          text-decoration-color: #ED0233;
+  -webkit-text-decoration-color: #ed0233;
+          text-decoration-color: #ed0233;
   text-underline-offset: 19px;
 }
 @media (hover: hover) {
@@ -2769,8 +2769,8 @@ button,
     opacity: 1;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    -webkit-text-decoration-color: #ED0233;
-            text-decoration-color: #ED0233;
+    -webkit-text-decoration-color: #ed0233;
+            text-decoration-color: #ed0233;
     text-underline-offset: 19px;
   }
 }
@@ -2779,8 +2779,8 @@ button,
   opacity: 1;
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  -webkit-text-decoration-color: #ED0233;
-          text-decoration-color: #ED0233;
+  -webkit-text-decoration-color: #ed0233;
+          text-decoration-color: #ed0233;
   text-underline-offset: 19px;
 }
 .subscriptions__tabs-control:disabled {
@@ -4981,12 +4981,12 @@ button,
       -ms-transform: translate(-100%);
           transform: translate(-100%);
   background-size: cover;
-  background-image: url("/img/gym-video-img.webp"), url("/img/gym-video-img.png");
+  background-image: url("../img/gym-video-img.webp"), url("../img/gym-video-img.png");
   border: none;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .video__control {
-    background-image: url("/img/gym-video-img@2x.webp"), url("/img/gym-video-img@2x.png");
+    background-image: url("../img/gym-video-img@2x.webp"), url("../img/gym-video-img@2x.png");
   }
 }
 .video__control::after {
@@ -5000,7 +5000,7 @@ button,
   -webkit-transform: translate(-50%);
       -ms-transform: translate(-50%);
           transform: translate(-50%);
-  background-image: url("/img/button-video.svg");
+  background-image: url("../img/button-video.svg");
   background-size: cover;
 }
 @media (max-width: 1199px) {
@@ -5011,11 +5011,11 @@ button,
 }
 @media (hover: hover) {
   .video__control:hover:not(:disabled)::after {
-    background-image: url("/img/button-video-focus.svg");
+    background-image: url("../img/button-video-focus.svg");
   }
 }
 .video__control:focus:not(:disabled)::after {
-  background-image: url("/img/button-video-focus.svg");
+  background-image: url("../img/button-video-focus.svg");
 }
 .video__control:disabled::after {
   background-image: url("/img/button-video-disabled.svg");

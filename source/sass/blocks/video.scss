@@ -31,13 +31,13 @@
   height: 100%;
   transform: translate(-100%);
   background-size: cover;
-  background-image: url("/img/gym-video-img.webp"),
-    url("/img/gym-video-img.png");
+  background-image: url("../img/gym-video-img.webp"),
+    url("../img/gym-video-img.png");
   border: none;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/gym-video-img@2x.webp"),
-      url("/img/gym-video-img@2x.png");
+    background-image: url("../img/gym-video-img@2x.webp"),
+      url("../img/gym-video-img@2x.png");
   }
 
   &::after {
@@ -49,7 +49,7 @@
     top: 28%;
     left: 50%;
     transform: translate(-50%);
-    background-image: url("/img/button-video.svg");
+    background-image: url("../img/button-video.svg");
     background-size: cover;
 
     @include vp-1199 {
@@ -60,7 +60,7 @@
 
   @include hover-focus {
     &::after {
-      background-image: url("/img/button-video-focus.svg");
+      background-image: url("../img/button-video-focus.svg");
     }
   }
 
