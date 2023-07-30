@@ -3763,7 +3763,7 @@ button,
   -ms-transform: translate(-100%);
   transform: translate(-100%);
   background-size: cover;
-  background-image: url("/img/gym-video-img.webp"), url("/img/gym-video-img.png");
+  background-image: url("../img/gym-video-img.webp"), url("../img/gym-video-img.png");
   border: none;
 }
 
@@ -3778,12 +3778,12 @@ button,
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%);
-  background-image: url("/img/button-video.svg");
+  background-image: url("../img/button-video.svg");
   background-size: cover;
 }
 
 .video__control:focus:not(:disabled)::after {
-  background-image: url("/img/button-video-focus.svg");
+  background-image: url("../img/button-video-focus.svg");
 }
 
 .video__control:disabled::after {
@@ -5368,7 +5368,7 @@ button,
   }
 
   .video__control:hover:not(:disabled)::after {
-    background-image: url("/img/button-video-focus.svg");
+    background-image: url("../img/button-video-focus.svg");
   }
 
   .btn--hero:hover:not(:disabled) {
@@ -5397,6 +5397,6 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .video__control {
-    background-image: url("/img/gym-video-img@2x.webp"), url("/img/gym-video-img@2x.png");
+    background-image: url("../img/gym-video-img@2x.webp"), url("../img/gym-video-img@2x.png");
   }
 }
