@@ -4326,6 +4326,9 @@ button,
 
   .stock__wrapper {
     gap: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .stock__coupon {
