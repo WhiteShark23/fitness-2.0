@@ -119,6 +119,7 @@
   img {
     @include vp-1199 {
       width: 324px;
+      height: 390px;
     }
 
     @include vp-767 {

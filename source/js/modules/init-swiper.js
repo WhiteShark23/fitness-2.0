@@ -1,6 +1,5 @@
 export const initSwiperFirst = () => {
   const swiperFirst = new window.Swiper('.swiper-first', {
-    direction: 'horizontal',
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -26,7 +25,6 @@ export const initSwiperFirst = () => {
 
 export const initSwiperLast = () => {
   const swiperLast = new window.Swiper('.swiper-last', {
-    direction: 'horizontal',
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

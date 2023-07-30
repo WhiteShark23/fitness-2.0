@@ -53,6 +53,10 @@
     &--nav {
       margin-right: auto;
       margin-bottom: 40px;
+
+      @include vp-767 {
+        margin-bottom: 34px;
+      }
     }
 
     &--social {

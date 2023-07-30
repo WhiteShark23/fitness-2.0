@@ -1,4 +1,4 @@
-.treners {
+.trainers {
   &--margin {
     margin-bottom: 105px;
 
@@ -37,7 +37,7 @@
   }
 }
 
-.treners__item {
+.trainers__item {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -45,7 +45,7 @@
   align-items: center;
 }
 
-.treners__info {
+.trainers__info {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -59,7 +59,7 @@
   @include hover-focus {
     background-color: rgba(16, 38, 84, 0.89);
 
-    .treners__info-list {
+    .trainers__info-list {
       display: block;
     }
 
@@ -85,7 +85,7 @@
   }
 }
 
-.treners__info-list {
+.trainers__info-list {
   @include reset-list;
 
   padding: 0 46px 0 55px;
@@ -96,7 +96,7 @@
   }
 }
 
-.treners__info-item {
+.trainers__info-item {
   display: flex;
   align-items: center;
 
@@ -124,14 +124,29 @@
   }
 }
 
-.treners__btn-prev,
-.treners__btn-next {
+.trainers__btn-prev,
+.trainers__btn-next {
   color: $color-dark-gray;
   --swiper-navigation-size: 32px;
-  margin-top: calc(60px - var(--swiper-navigation-size)/2);
+  margin-top: calc(45px - var(--swiper-navigation-size)/2);
+  width: 56px;
+  height: 56px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  outline: none;
+
+  @include hover-focus {
+    border-color: $color-sapphire;
+    color: $color-sapphire;
+  }
+
+  @include active {
+    background-color: $color-sapphire;
+    color: $color-default-white;
+  }
 
   @include vp-1199 {
-    margin-top: calc(41px - var(--swiper-navigation-size)/2);
+    margin-top: calc(30px - var(--swiper-navigation-size)/2);
   }
 
   @include vp-767 {
@@ -140,11 +155,11 @@
   }
 }
 
-.treners__btn-next {
-  right: -40px;
+.trainers__btn-next {
+  right: -56px;
 
   @include vp-1199 {
-    right: 45px;
+    right: 25px;
   }
 
   @include vp-767 {
@@ -152,11 +167,11 @@
   }
 }
 
-.treners__btn-prev {
-  left: -40px;
+.trainers__btn-prev {
+  left: -56px;
 
   @include vp-1199 {
-    left: 45px;
+    left: 25px;
   }
 
   @include vp-767 {
@@ -164,9 +179,11 @@
   }
 }
 
-.treners__img {
+.trainers__img {
   img {
-    width: 226px;
-    height: 274px;
+    @include vp-767 {
+      width: 226px;
+      height: 274px;
+    }
   }
 }

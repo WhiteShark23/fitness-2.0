@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/init-tabs.js';
 import {initSwiperFirst, initSwiperLast} from './modules/init-swiper.js';
 import {initAccordions} from './modules/init-accordion.js';
+import {initVideos} from './modules/inin-video.js';
 
 
 // ---------------------------------
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
+  initVideos();
   iosVhFix();
   initTabs();
   initSwiperFirst();

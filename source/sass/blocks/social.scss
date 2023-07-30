@@ -6,3 +6,74 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 11px;
 }
+
+.social__item {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: $color-default-white;
+    border-radius: 50%;
+
+    use {
+      fill: $color-default-black;
+    }
+
+    svg {
+      display: block;
+    }
+  }
+
+  &--vk {
+    a {
+      @include hover-focus {
+        background-color: $color-egyptian-blue;
+        outline: inherit;
+
+        use {
+          fill: $color-default-white;
+        }
+      }
+
+      @include active {
+        background-color: $color-sapphire;
+      }
+    }
+  }
+
+  &--classmates {
+    a {
+      @include hover-focus {
+        background-color: $color-orange-peel;
+        outline: inherit;
+
+        use {
+          fill: $color-default-white;
+        }
+      }
+
+      @include active {
+        background-color: $color-mango-tango;
+      }
+    }
+  }
+
+  &--reddit {
+    a {
+      @include hover-focus {
+        background-color: $color-orange-red;
+        outline: inherit;
+
+        use {
+          fill: $color-default-white;
+        }
+      }
+
+      @include active {
+        background-color: $color-smoke-tree;
+      }
+    }
+  }
+}

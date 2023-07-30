@@ -99,27 +99,42 @@
 }
 
 .reviews__btn {
-  top: 65%;
+  top: 62%;
   --swiper-navigation-size: 32px;
   color: $color-dark-gray;
+  width: 56px;
+  height: 56px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  outline: none;
+
+  @include hover-focus {
+    border-color: $color-sapphire;
+    color: $color-sapphire;
+  }
+
+  @include active {
+    background-color: $color-sapphire;
+    color: $color-default-white;
+  }
 
   @include vp-1199 {
-    top: 64%;
+    top: 61%;
   }
 
   &--prew {
-    left: 22%;
+    left: 20%;
 
     @include vp-1199 {
-      left: 6%;
+      left: 3%;
     }
   }
 
   &--next {
-    right: 22%;
+    right: 20%;
 
     @include vp-1199 {
-      right: 6%;
+      right: 3%;
     }
   }
 }
