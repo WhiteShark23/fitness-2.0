@@ -29,7 +29,8 @@
   cursor: pointer;
   width: 100%;
   height: 100%;
-  transform: translate(-100%);
+  top: 0;
+  left: 0;
   background-size: cover;
   background-image: url("../img/gym-video-img.webp"),
     url("../img/gym-video-img.png");

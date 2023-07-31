@@ -1,9 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initTabs} from './modules/init-tabs.js';
-import {initSwiperFirst, initSwiperLast} from './modules/init-swiper.js';
-import {initAccordions} from './modules/init-accordion.js';
+import {initTabs} from './modules/tabs/init-tabs';
+import {initSwiperFirst, initSwiperLast} from './modules/init-swiper';
+import {initAccordions} from './modules/accordions/init-accordion';
 import {initVideos} from './modules/inin-video.js';
 
 
@@ -13,8 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
-  initVideos();
   iosVhFix();
   initTabs();
   initSwiperFirst();
@@ -27,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
+    initVideos();
     const form = new Form();
     window.form = form;
     form.init();

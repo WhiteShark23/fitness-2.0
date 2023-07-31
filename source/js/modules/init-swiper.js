@@ -15,8 +15,8 @@ export const initSwiperFirst = () => {
       }},
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.trainers__btn-next',
+      prevEl: '.trainers__btn-prev',
     },
   });
 
@@ -26,8 +26,8 @@ export const initSwiperFirst = () => {
 export const initSwiperLast = () => {
   const swiperLast = new window.Swiper('.swiper-last', {
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.reviews__btn--next',
+      prevEl: '.reviews__btn--prew',
     },
   });
 
