@@ -10,14 +10,14 @@
     right: -10%;
     width: 469px;
     height: 439px;
-    background-image: url("../../img/chips.webp"),
-      url("../../img/chips.png");
+    background-image: url("../img/chips.webp"),
+      url("../img/chips.png");
     background-repeat: no-repeat;
     background-size: cover;
 
     @include retina {
-      background-image:  url("../../img/chips@2x.webp"),
-        url("../../img/chips@2x.png");
+      background-image:  url("../img/chips@2x.webp"),
+        url("../img/chips@2x.png");
     }
   }
 
