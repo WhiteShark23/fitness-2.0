@@ -2,22 +2,48 @@
   position: relative;
   background-color: $color-ghost-white;
 
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -11%;
+    right: -10%;
+    width: 469px;
+    height: 439px;
+    background-image: url("../../img/chips.webp"),
+      url("../../img/chips.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background-image:  url("../../img/chips@2x.webp"),
+        url("../../img/chips@2x.png");
+    }
+  }
+
   &--padding {
     padding: 120px 0;
     margin-bottom: 120px;
-    background-image: url("/img/chips.png");
-    background-repeat: no-repeat;
-    background-position: right 37px bottom -150px;
 
     @include vp-1199 {
       padding: 100px 0;
       margin-bottom: 104px;
+
+      &::after {
+        bottom: -7%;
+        right: 0%;
+        width: 343px;
+        height: 442px;
+      }
     }
 
     @include vp-767 {
       padding: 62px 0 71px;
-      background-image: none;
       margin-bottom: 70px;
+
+      &::after {
+        display: none;
+      }
     }
   }
 

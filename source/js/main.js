@@ -3,7 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initSwiperFirst, initSwiperLast} from './modules/init-swiper';
 import {initAccordions} from './modules/accordions/init-accordion';
-import {initVideos} from './modules/inin-video.js';
+import {initVideos} from './modules/inin-video';
 
 
 // ---------------------------------

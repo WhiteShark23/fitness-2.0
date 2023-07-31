@@ -2519,24 +2519,46 @@ button,
   position: relative;
   background-color: #f8f9fc;
 }
+.subscriptions::after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: -11%;
+  right: -10%;
+  width: 469px;
+  height: 439px;
+  background-image: url("../../img/chips.webp"), url("../../img/chips.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .subscriptions::after {
+    background-image: url("../../img/chips@2x.webp"), url("../../img/chips@2x.png");
+  }
+}
 .subscriptions--padding {
   padding: 120px 0;
   margin-bottom: 120px;
-  background-image: url("/img/chips.png");
-  background-repeat: no-repeat;
-  background-position: right 37px bottom -150px;
 }
 @media (max-width: 1199px) {
   .subscriptions--padding {
     padding: 100px 0;
     margin-bottom: 104px;
   }
+  .subscriptions--padding::after {
+    bottom: -7%;
+    right: 0%;
+    width: 343px;
+    height: 442px;
+  }
 }
 @media (max-width: 767px) {
   .subscriptions--padding {
     padding: 62px 0 71px;
-    background-image: none;
     margin-bottom: 70px;
+  }
+  .subscriptions--padding::after {
+    display: none;
   }
 }
 .subscriptions h2 {
