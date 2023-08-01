@@ -3640,29 +3640,6 @@ button,
   right: 20%;
 }
 
-.video__player {
-  display: none;
-}
-
-.video {
-  position: relative;
-  width: 364px;
-  height: 228px;
-}
-
-.video iframe {
-  width: 364px;
-  height: 228px;
-}
-
-.video.is-active .video__player {
-  display: block;
-}
-
-.video.is-active .video__control {
-  display: none;
-}
-
 .video__control {
   font-size: 0;
   line-height: 0;
@@ -3699,6 +3676,29 @@ button,
 
 .video__control:disabled::after {
   background-image: url("/img/button-video-disabled.svg");
+}
+
+.video__player {
+  display: none;
+}
+
+.video {
+  position: relative;
+  width: 364px;
+  height: 228px;
+}
+
+.video iframe {
+  width: 364px;
+  height: 228px;
+}
+
+.video.is-active .video__player {
+  display: block;
+}
+
+.video.is-active .video__control {
+  display: none;
 }
 
 .btn {
@@ -4425,6 +4425,11 @@ button,
     right: 3%;
   }
 
+  .video__control::after {
+    width: 72px;
+    height: 72px;
+  }
+
   .video {
     width: 266px;
     height: 167px;
@@ -4433,11 +4438,6 @@ button,
   .video iframe {
     width: 266px;
     height: 167px;
-  }
-
-  .video__control::after {
-    width: 72px;
-    height: 72px;
   }
 
   .btn--hero {
