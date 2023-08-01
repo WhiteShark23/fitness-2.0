@@ -3659,6 +3659,10 @@ button,
   display: block;
 }
 
+.video.is-active .video__control {
+  display: none;
+}
+
 .video__control {
   font-size: 0;
   line-height: 0;
