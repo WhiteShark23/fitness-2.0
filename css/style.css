@@ -3640,14 +3640,23 @@ button,
   right: 20%;
 }
 
+.video__player {
+  display: none;
+}
+
 .video {
   position: relative;
+  width: 364px;
   height: 228px;
 }
 
 .video iframe {
   width: 364px;
   height: 228px;
+}
+
+.video.is-active .video__player {
+  display: block;
 }
 
 .video__control {
@@ -4414,6 +4423,7 @@ button,
   }
 
   .video {
+    width: 266px;
     height: 167px;
   }
 
@@ -5055,6 +5065,10 @@ button,
     height: 68px;
     top: 40px;
     left: 41px;
+  }
+
+  .video {
+    width: 320px;
   }
 
   .video iframe {
