@@ -16,7 +16,6 @@ const initVideo = (containerElement) => {
 
   controlElement.addEventListener('click', () => {
     containerElement.classList.add('is-active');
-    controlElement.style.display = 'none';
 
     youtubePlayer.playVideo();
   });
