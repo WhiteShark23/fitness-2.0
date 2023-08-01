@@ -13,10 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
   iosVhFix();
-  initTabs();
   initSwiperFirst();
-  initSwiperLast();
-  initAccordions();
 
   // Modules
   // ---------------------------------
@@ -25,6 +22,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initVideos();
+    initTabs();
+    initSwiperLast();
+    initAccordions();
     const form = new Form();
     window.form = form;
     form.init();
