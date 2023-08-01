@@ -3680,7 +3680,6 @@ button,
 }
 
 .video__control::after {
-  display: block;
   position: absolute;
   content: "";
   width: 100px;
