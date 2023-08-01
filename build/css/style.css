@@ -4851,13 +4851,24 @@ button,
   }
 }
 
+.video__player {
+  display: none;
+}
+
 .video {
   position: relative;
+  width: 364px;
   height: 228px;
 }
 @media (max-width: 1199px) {
   .video {
+    width: 266px;
     height: 167px;
+  }
+}
+@media (max-width: 767px) {
+  .video {
+    width: 320px;
   }
 }
 .video iframe {
@@ -4874,6 +4885,9 @@ button,
   .video iframe {
     width: 320px;
   }
+}
+.video.is-active .video__player {
+  display: block;
 }
 
 .video__control {
