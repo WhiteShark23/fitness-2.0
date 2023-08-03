@@ -38,17 +38,7 @@ const initVideo = (containerElement) => {
   if (scriptLoaded) {
     initPlayer();
   } else {
-    const observer = new IntersectionObserver((entries, observers) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          loadScript('https://www.youtube.com/player_api', initPlayer, () => (scriptLoaded = true));
-          observers.unobserve(containerElement);
-        }
-      });
-    }, {
-      root: null,
-    });
-    observer.observe(containerElement);
+    loadScript('https://www.youtube.com/player_api', initPlayer, () => (scriptLoaded = true));
   }
 };
 
