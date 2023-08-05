@@ -2285,13 +2285,16 @@ button,
   display: block;
 }
 
-.social__item--vk a:focus:not(:disabled) {
-  background-color: #103aae;
+.social__item a:focus:not(:disabled) {
   outline: inherit;
 }
 
-.social__item--vk a:focus:not(:disabled) use {
+.social__item a:focus:not(:disabled) use {
   fill: #ffffff;
+}
+
+.social__item--vk a:focus:not(:disabled) {
+  background-color: #103aae;
 }
 
 .social__item--vk a:active:not(:disabled) {
@@ -2300,11 +2303,6 @@ button,
 
 .social__item--classmates a:focus:not(:disabled) {
   background-color: #ff9800;
-  outline: inherit;
-}
-
-.social__item--classmates a:focus:not(:disabled) use {
-  fill: #ffffff;
 }
 
 .social__item--classmates a:active:not(:disabled) {
@@ -2313,11 +2311,6 @@ button,
 
 .social__item--reddit a:focus:not(:disabled) {
   background-color: #ff4500;
-  outline: inherit;
-}
-
-.social__item--reddit a:focus:not(:disabled) use {
-  fill: #ffffff;
 }
 
 .social__item--reddit a:active:not(:disabled) {
@@ -2404,7 +2397,7 @@ button,
   padding-bottom: 13px;
 }
 
-.subscriptions__tabs-controls ::after {
+.subscriptions__tabs-controls::after {
   position: absolute;
   content: "";
   display: block;
@@ -3308,7 +3301,7 @@ button,
   gap: 10px;
 }
 
-.tabs__content {
+.faq__content {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -3354,12 +3347,12 @@ button,
   display: none;
 }
 
-.accordion__wrapper {
+.faq__wrapper {
   margin: 0;
   padding: 0;
 }
 
-.accordion__wrapper p {
+.faq__wrapper p {
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -3632,6 +3625,25 @@ button,
   right: 20%;
 }
 
+.video {
+  position: relative;
+  width: 364px;
+  height: 228px;
+}
+
+.video iframe {
+  width: 364px;
+  height: 228px;
+}
+
+.video.is-active .video__player {
+  display: block;
+}
+
+.video.is-active .video__control {
+  display: none;
+}
+
 .video__control {
   font-size: 0;
   line-height: 0;
@@ -3644,6 +3656,7 @@ button,
   top: 0;
   left: 0;
   background-size: cover;
+  background-color: #102654;
   background-image: url("../img/gym-video-img.webp"), url("../img/gym-video-img.png");
   border: none;
 }
@@ -3671,25 +3684,6 @@ button,
 }
 
 .video__player {
-  display: none;
-}
-
-.video {
-  position: relative;
-  width: 364px;
-  height: 228px;
-}
-
-.video iframe {
-  width: 364px;
-  height: 228px;
-}
-
-.video.is-active .video__player {
-  display: block;
-}
-
-.video.is-active .video__control {
   display: none;
 }
 
@@ -3761,7 +3755,7 @@ button,
   position: relative;
   width: 42px;
   height: 42px;
-  border: 1px solid #1c3374;
+  outline: 1px solid #1c3374;
   border-radius: 50%;
   top: -7px;
 }
@@ -3771,7 +3765,8 @@ button,
   border-color: #102654;
 }
 
-.btn--aquamarine:focus:not(:disabled) span {
+.btn--aquamarine:focus:not(:disabled)::after,
+.btn--aquamarine:focus:not(:disabled)::before {
   background-color: #ffffff;
 }
 
@@ -3780,15 +3775,16 @@ button,
   border-color: #102654;
 }
 
-.btn--aquamarine:active:not(:disabled) span {
+.btn--aquamarine:active:not(:disabled)::after {
   background-color: #ffffff;
 }
 
-.btn--aquamarine:active:not(:disabled) span:last-child {
+.btn--aquamarine:active:not(:disabled)::before {
   display: none;
 }
 
-.btn--aquamarine span {
+.btn--aquamarine::after,
+.btn--aquamarine::before {
   font-size: 0;
   line-height: 0;
   position: absolute;
@@ -3804,11 +3800,11 @@ button,
   background-color: #1c3374;
 }
 
-.btn--aquamarine span:last-child {
+.btn--aquamarine::before {
+  left: 28%;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  left: 29%;
 }
 
 .btn--faq {
@@ -4317,7 +4313,7 @@ button,
     gap: 8px;
   }
 
-  .accordion__wrapper p {
+  .faq__wrapper p {
     max-width: 559px;
   }
 
@@ -4419,11 +4415,6 @@ button,
     right: 3%;
   }
 
-  .video__control::after {
-    width: 72px;
-    height: 72px;
-  }
-
   .video {
     width: 266px;
     height: 167px;
@@ -4432,6 +4423,11 @@ button,
   .video iframe {
     width: 266px;
     height: 167px;
+  }
+
+  .video__control::after {
+    width: 72px;
+    height: 72px;
   }
 
   .btn--hero {
@@ -4972,7 +4968,7 @@ button,
     display: block;
   }
 
-  .accordion__wrapper p {
+  .faq__wrapper p {
     font-size: 16px;
     line-height: 22.4px;
     margin-top: 11px;
@@ -5097,13 +5093,14 @@ button,
     padding: 14px;
   }
 
-  .btn--aquamarine span {
+  .btn--aquamarine::after,
+  .btn--aquamarine::before {
     width: 12px;
     height: 1px;
   }
 
-  .btn--aquamarine span:last-child {
-    left: 29%;
+  .btn--aquamarine::before {
+    left: 31%;
   }
 
   .btn--faq {
@@ -5201,31 +5198,24 @@ button,
     display: block;
   }
 
-  .social__item--vk a:hover:not(:disabled) {
-    background-color: #103aae;
+  .social__item a:hover:not(:disabled) {
     outline: inherit;
   }
 
-  .social__item--vk a:hover:not(:disabled) use {
+  .social__item a:hover:not(:disabled) use {
     fill: #ffffff;
+  }
+
+  .social__item--vk a:hover:not(:disabled) {
+    background-color: #103aae;
   }
 
   .social__item--classmates a:hover:not(:disabled) {
     background-color: #ff9800;
-    outline: inherit;
-  }
-
-  .social__item--classmates a:hover:not(:disabled) use {
-    fill: #ffffff;
   }
 
   .social__item--reddit a:hover:not(:disabled) {
     background-color: #ff4500;
-    outline: inherit;
-  }
-
-  .social__item--reddit a:hover:not(:disabled) use {
-    fill: #ffffff;
   }
 
   .subscriptions__tabs-control:hover:not(:disabled) {
@@ -5307,7 +5297,8 @@ button,
     border-color: #102654;
   }
 
-  .btn--aquamarine:hover:not(:disabled) span {
+  .btn--aquamarine:hover:not(:disabled)::after,
+  .btn--aquamarine:hover:not(:disabled)::before {
     background-color: #ffffff;
   }
 
