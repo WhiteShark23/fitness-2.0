@@ -24,17 +24,20 @@
     svg {
       display: block;
     }
+
+    @include hover-focus {
+      outline: inherit;
+
+      use {
+        fill: $color-default-white;
+      }
+    }
   }
 
   &--vk {
     a {
       @include hover-focus {
         background-color: $color-egyptian-blue;
-        outline: inherit;
-
-        use {
-          fill: $color-default-white;
-        }
       }
 
       @include active {
@@ -47,11 +50,6 @@
     a {
       @include hover-focus {
         background-color: $color-orange-peel;
-        outline: inherit;
-
-        use {
-          fill: $color-default-white;
-        }
       }
 
       @include active {
@@ -64,11 +62,6 @@
     a {
       @include hover-focus {
         background-color: $color-orange-red;
-        outline: inherit;
-
-        use {
-          fill: $color-default-white;
-        }
       }
 
       @include active {
