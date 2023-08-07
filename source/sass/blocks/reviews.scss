@@ -99,35 +99,14 @@
 }
 
 .reviews__btn {
-  top: 62%;
-  --swiper-navigation-size: 32px;
-  color: $color-dark-gray;
-  width: 56px;
-  height: 56px;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  outline: none;
+  margin-top: calc(41px - var(--swiper-navigation-size)/2);
 
   @include vp-1199 {
-    top: 61%;
+    margin-top: calc(33px - var(--swiper-navigation-size)/2);
   }
 
   @include vp-767 {
-    width: 22px;
-    height: 25px;
-    border-radius: 0;
-    --swiper-navigation-size: 22px;
-    top: 59%;
-  }
-
-  @include hover-focus {
-    border-color: $color-sapphire;
-    color: $color-sapphire;
-  }
-
-  @include active {
-    background-color: $color-sapphire;
-    color: $color-default-white;
+    margin-top: calc(38px - var(--swiper-navigation-size)/2);
   }
 
   &--prew {

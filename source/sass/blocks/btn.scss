@@ -109,7 +109,7 @@
     }
 
     &::after,
-    &::before  {
+    &::before {
       @include font-reset;
 
       position: absolute;
