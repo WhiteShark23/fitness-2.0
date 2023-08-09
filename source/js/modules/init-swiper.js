@@ -15,8 +15,8 @@ export const initSwiperFirst = () => {
       }},
     loop: true,
     navigation: {
-      nextEl: '.trainers__btn-next',
-      prevEl: '.trainers__btn-prev',
+      nextEl: '.trainers__btn--next',
+      prevEl: '.trainers__btn--prev',
     },
   });
 
