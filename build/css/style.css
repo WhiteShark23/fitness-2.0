@@ -3499,7 +3499,7 @@ button,
   display: -ms-grid;
   display: grid;
       grid-template-areas: "square simulators parking" "comfort simulators trainer";
-  gap: 0 50px;
+  gap: 0 56px;
   max-width: 1040px;
   margin-left: auto;
   margin-right: auto;
@@ -3507,7 +3507,7 @@ button,
 @media (max-width: 1199px) {
   .advantages__list {
         grid-template-areas: "square parking" "simulators simulators" "comfort trainer";
-    gap: 42px 45px;
+    gap: 43px;
   }
 }
 @media (max-width: 767px) {
@@ -3577,7 +3577,6 @@ button,
   width: 240px;
   height: 96%;
   margin-top: 7px;
-  margin-right: 11px;
 }
 @media (max-width: 1199px) {
   .advantages__item--simulators {
