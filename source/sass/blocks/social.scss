@@ -27,46 +27,15 @@
 
     @include hover-focus {
       outline: inherit;
+      background-color: $color-egyptian-blue;
 
       use {
         fill: $color-default-white;
       }
     }
-  }
 
-  &--vk {
-    a {
-      @include hover-focus {
-        background-color: $color-egyptian-blue;
-      }
-
-      @include active {
-        background-color: $color-sapphire;
-      }
-    }
-  }
-
-  &--classmates {
-    a {
-      @include hover-focus {
-        background-color: $color-orange-peel;
-      }
-
-      @include active {
-        background-color: $color-mango-tango;
-      }
-    }
-  }
-
-  &--reddit {
-    a {
-      @include hover-focus {
-        background-color: $color-orange-red;
-      }
-
-      @include active {
-        background-color: $color-smoke-tree;
-      }
+    @include active {
+      background-color: $color-sapphire;
     }
   }
 }
