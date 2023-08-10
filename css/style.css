@@ -2307,34 +2307,15 @@ button,
 
 .social__item a:focus:not(:disabled) {
   outline: inherit;
+  background-color: #103aae;
 }
 
 .social__item a:focus:not(:disabled) use {
   fill: #ffffff;
 }
 
-.social__item--vk a:focus:not(:disabled) {
-  background-color: #103aae;
-}
-
-.social__item--vk a:active:not(:disabled) {
+.social__item a:active:not(:disabled) {
   background-color: #102654;
-}
-
-.social__item--classmates a:focus:not(:disabled) {
-  background-color: #ff9800;
-}
-
-.social__item--classmates a:active:not(:disabled) {
-  background-color: #d57f00;
-}
-
-.social__item--reddit a:focus:not(:disabled) {
-  background-color: #ff4500;
-}
-
-.social__item--reddit a:active:not(:disabled) {
-  background-color: #c35a32;
 }
 
 .tabs__content {
@@ -3715,16 +3696,18 @@ button,
 .btn--competition {
   width: 100%;
   text-transform: uppercase;
-  border: 4px solid #ffffff;
+  outline: 4px solid #ffffff;
   padding: 25px 20px;
 }
 
 .btn--competition:focus:not(:disabled) {
-  opacity: 0.7;
+  background-color: #ffffff;
+  color: #103aae;
 }
 
 .btn--competition:active:not(:disabled) {
-  opacity: 0.5;
+  background-color: #ffffff;
+  color: #102654;
 }
 
 .btn--competition:disabled {
@@ -3814,7 +3797,21 @@ button,
   text-transform: uppercase;
   width: 100%;
   padding: 17px;
-  border: 3px solid #ffffff;
+  outline: 3px solid #ffffff;
+}
+
+.btn--form:focus:not(:disabled) {
+  background-color: #ffffff;
+  color: #103aae;
+}
+
+.btn--form:active:not(:disabled) {
+  background-color: #ffffff;
+  color: #102654;
+}
+
+.btn--form:disabled {
+  opacity: 0.3;
 }
 
 .btn--red {
@@ -5229,22 +5226,11 @@ button,
 
   .social__item a:hover:not(:disabled) {
     outline: inherit;
+    background-color: #103aae;
   }
 
   .social__item a:hover:not(:disabled) use {
     fill: #ffffff;
-  }
-
-  .social__item--vk a:hover:not(:disabled) {
-    background-color: #103aae;
-  }
-
-  .social__item--classmates a:hover:not(:disabled) {
-    background-color: #ff9800;
-  }
-
-  .social__item--reddit a:hover:not(:disabled) {
-    background-color: #ff4500;
   }
 
   .subscriptions__tabs-control:hover:not(:disabled) {
@@ -5307,7 +5293,8 @@ button,
   }
 
   .btn--competition:hover:not(:disabled) {
-    opacity: 0.7;
+    background-color: #ffffff;
+    color: #103aae;
   }
 
   .btn--aquamarine:hover:not(:disabled) {
@@ -5322,6 +5309,11 @@ button,
 
   .btn--faq:hover:not(:disabled) {
     border-color: #102654;
+  }
+
+  .btn--form:hover:not(:disabled) {
+    background-color: #ffffff;
+    color: #103aae;
   }
 
   .slider-btn:hover:not(:disabled) {
