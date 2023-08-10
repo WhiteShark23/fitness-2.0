@@ -164,6 +164,8 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px 0;
 
   @include vp-1199 {
     flex-direction: column;
