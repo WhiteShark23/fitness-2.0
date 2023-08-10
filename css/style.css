@@ -2889,7 +2889,7 @@ button,
   display: -ms-grid;
   display: grid;
   grid-template-areas: "square simulators parking" "comfort simulators trainer";
-  gap: 0 50px;
+  gap: 0 56px;
   max-width: 1040px;
   margin-left: auto;
   margin-right: auto;
@@ -2926,7 +2926,6 @@ button,
   width: 240px;
   height: 96%;
   margin-top: 7px;
-  margin-right: 11px;
 }
 
 .advantages__item--parking {
@@ -3593,8 +3592,11 @@ button,
 }
 
 .video iframe {
-  width: 364px;
-  height: 228px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .video.is-active .video__player {
@@ -3627,11 +3629,11 @@ button,
   content: "";
   width: 100px;
   height: 100px;
-  top: 28%;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-image: url("../img/button-video.svg");
   background-size: cover;
 }
@@ -4137,7 +4139,7 @@ button,
 
   .advantages__list {
     grid-template-areas: "square parking" "simulators simulators" "comfort trainer";
-    gap: 42px 45px;
+    gap: 43px;
   }
 
   .advantages__item--square {
@@ -4413,11 +4415,6 @@ button,
     height: 167px;
   }
 
-  .video iframe {
-    width: 266px;
-    height: 167px;
-  }
-
   .video__control::after {
     width: 72px;
     height: 72px;
@@ -4679,7 +4676,7 @@ button,
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
     transform: translate(0);
-    width: 320px;
+    width: 100%;
   }
 
   .competition--position {
@@ -5061,11 +5058,8 @@ button,
   }
 
   .video {
-    width: 320px;
-  }
-
-  .video iframe {
-    width: 320px;
+    width: 100%;
+    padding-top: 45.8791208791%;
   }
 
   .btn--hero {
