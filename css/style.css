@@ -2155,9 +2155,26 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  top: 305px;
+  top: 207px;
   left: -79px;
   width: 113px;
+}
+
+.hero-block__text {
+  position: relative;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  width: 298px;
 }
 
 .intro--background {
@@ -3917,7 +3934,7 @@ button,
   }
 
   .hero-block__info span {
-    top: 186px;
+    top: 144px;
     left: -26px;
   }
 
@@ -4474,11 +4491,18 @@ button,
 
   .hero-block--padding {
     padding: 108px 0 78px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .hero-block__info {
     margin: 0;
     padding: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
   }
 
   .hero-block__info p {
@@ -4486,17 +4510,23 @@ button,
     letter-spacing: 0.84px;
     font-size: 28px;
     line-height: 33px;
-    margin-right: 3px;
+    margin-right: 11px;
     margin-bottom: 15px;
   }
 
   .hero-block__info h1 {
     margin-bottom: 22px;
+    margin-right: 8px;
   }
 
   .hero-block__info span {
     top: 125px;
     left: -1px;
+  }
+
+  .hero-block__text {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-block__img img {
@@ -5064,7 +5094,6 @@ button,
 
   .btn--hero {
     width: 100%;
-    max-width: 320px;
     padding: 23px 20px;
     line-height: 9px;
   }
