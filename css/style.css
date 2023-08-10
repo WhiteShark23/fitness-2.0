@@ -5001,6 +5001,13 @@ button,
 
   .connection__form {
     padding: 65px 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .connection__form form {
+    width: 100%;
   }
 
   .connection__form h2 {
@@ -5008,6 +5015,8 @@ button,
     letter-spacing: 0.96px;
     font-size: 32px;
     margin-bottom: 30px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
 
   .connection__form-input {
@@ -5021,7 +5030,7 @@ button,
   }
 
   .connection__form-input input {
-    width: 290px;
+    width: 100%;
   }
 
   .connection__contacts {
