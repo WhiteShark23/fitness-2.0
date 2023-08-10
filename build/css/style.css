@@ -5096,7 +5096,7 @@ button,
 .btn--faq:focus:not(:disabled) {
   border-color: #102654;
 }
-.btn--faq:active:not(:disabled) {
+.btn--faq.is-active {
   border-color: inherit;
   color: #ffffff;
   background: linear-gradient(151deg, #ed0233 0%, #0041ca 100%);

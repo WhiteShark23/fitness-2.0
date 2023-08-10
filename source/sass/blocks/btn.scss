@@ -169,7 +169,7 @@
       border-color: $color-sapphire;
     }
 
-    @include active {
+    &.is-active {
       border-color: inherit;
       color: $color-default-white;
       background: linear-gradient(151deg, $color-torch-red 0%, $color-cobalt 100%);
