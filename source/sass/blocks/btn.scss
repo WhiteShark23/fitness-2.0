@@ -96,7 +96,7 @@
       }
     }
 
-    @include active {
+    .faq__content-item.is-active & {
       background-color: $color-sapphire;
       border-color: $color-sapphire;
 

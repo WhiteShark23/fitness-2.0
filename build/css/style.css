@@ -5022,14 +5022,14 @@ button,
 .btn--aquamarine:focus:not(:disabled)::after, .btn--aquamarine:focus:not(:disabled)::before {
   background-color: #ffffff;
 }
-.btn--aquamarine:active:not(:disabled) {
+.faq__content-item.is-active .btn--aquamarine {
   background-color: #102654;
   border-color: #102654;
 }
-.btn--aquamarine:active:not(:disabled)::after {
+.faq__content-item.is-active .btn--aquamarine::after {
   background-color: #ffffff;
 }
-.btn--aquamarine:active:not(:disabled)::before {
+.faq__content-item.is-active .btn--aquamarine::before {
   display: none;
 }
 .btn--aquamarine::after, .btn--aquamarine::before {
