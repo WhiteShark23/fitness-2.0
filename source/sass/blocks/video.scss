@@ -9,21 +9,16 @@
   }
 
   @include vp-767 {
-    width: 320px;
+    width: 100%;
+    padding-top: calc(100% * 167 / 364);
   }
 
   iframe {
-    width: 364px;
-    height: 228px;
-
-    @include vp-1199 {
-      width: 266px;
-      height: 167px;
-    }
-
-    @include vp-767 {
-      width: 320px;
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   &.is-active {
@@ -63,9 +58,9 @@
     content: "";
     width: 100px;
     height: 100px;
-    top: 28%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
     background-image: url("../img/button-video.svg");
     background-size: cover;
 
