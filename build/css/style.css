@@ -3117,10 +3117,12 @@ button,
   -ms-flex-item-align: self-start;
       -ms-grid-row-align: self-start;
       align-self: self-start;
+  max-width: 300px;
   margin-bottom: 47px;
 }
 @media (max-width: 1199px) {
   .competition__row p {
+    max-width: 190px;
     margin-top: -6px;
     font-size: 12px;
     margin-bottom: 28px;
@@ -4981,6 +4983,7 @@ button,
   text-transform: uppercase;
   outline: 4px solid #ffffff;
   padding: 25px 20px;
+  max-width: 343px;
 }
 @media (hover: hover) {
   .btn--competition:hover:not(:disabled) {
@@ -5005,6 +5008,7 @@ button,
     padding: 13px 20px;
     letter-spacing: 0.5px;
     border: 1px solid #ffffff;
+    max-width: 202px;
   }
 }
 .btn--aquamarine {
