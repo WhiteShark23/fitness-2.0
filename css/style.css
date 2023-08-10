@@ -2056,6 +2056,9 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .header-list--position {
@@ -2388,6 +2391,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px 0;
   width: 341px;
   -webkit-box-align: center;
   -ms-flex-align: center;
