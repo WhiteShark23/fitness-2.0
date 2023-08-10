@@ -4459,6 +4459,14 @@ button,
 @media (max-width: 767px) {
   .connection__form {
     padding: 65px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .connection__form form {
+    width: 100%;
   }
 }
 .connection__form h2 {
@@ -4485,6 +4493,8 @@ button,
     letter-spacing: 0.96px;
     font-size: 32px;
     margin-bottom: 30px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
@@ -4532,7 +4542,7 @@ button,
 }
 @media (max-width: 767px) {
   .connection__form-input input {
-    width: 290px;
+    width: 100%;
   }
 }
 .connection__form-input input::-webkit-input-placeholder {
