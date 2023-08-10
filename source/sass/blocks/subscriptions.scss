@@ -81,6 +81,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px 0;
   width: 341px;
   align-items: center;
   margin-left: auto;
