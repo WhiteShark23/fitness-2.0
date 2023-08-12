@@ -13,11 +13,11 @@
     top: 30px;
     width: 100%;
     z-index: 1;
-    padding: 0 20px;
+    padding: 0 10px;
 
     @include vp-1199 {
-      top: 40px;
-      padding: 0 45px;
+      top: 32px;
+      padding: 0 36px;
     }
 
     @include vp-767 {
@@ -29,15 +29,47 @@
 }
 
 .header-list__item {
-  a {
-    @include font-reset;
+  @include vp-1199 {
+    margin-top: 6px;
+  }
 
+  a {
     font-family: $ff-sans-mini;
     color: $color-default-white;
     font-weight: 600;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.78px;
+    padding: 10px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      display: none;
+      content: "";
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+      width: calc(100% - 20px);
+      height: 1px;
+      background-color: $color-default-white;
+    }
+
+    @include hover {
+      &::after {
+        display: block;
+      }
+    }
+
+    @include focus {
+      outline: 1px solid $color-default-white;
+    }
+
+    @include active {
+      &::after {
+        display: none;
+      }
+    }
 
     @include vp-1199 {
       letter-spacing: 0.48px;
@@ -48,14 +80,30 @@
     @include vp-767 {
       letter-spacing: 0.4px;
       font-size: 20px;
+      padding: 0;
     }
   }
 
   &--logo {
-    @include font-reset;
+    display: flex;
+    align-items: center;
+
+    @include vp-1199 {
+      margin: 0;
+    }
 
     a {
-      @include font-reset;
+      display: flex;
+      align-items: center;
+      height: 44px;
+
+      @include vp-1199 {
+        height: 37px;
+      }
+
+      @include vp-767 {
+        height: 24px;
+      }
 
       svg {
         @include vp-1199 {
