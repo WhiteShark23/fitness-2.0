@@ -145,6 +145,10 @@
   &--next {
     right: -56px;
 
+    @include vp-1300 {
+      right: -18px;
+    }
+
     @include vp-1199 {
       right: 25px;
     }
@@ -156,6 +160,10 @@
 
   &--prev {
     left: -56px;
+
+    @include vp-1300 {
+      left: -18px;
+    }
 
     @include vp-1199 {
       left: 25px;

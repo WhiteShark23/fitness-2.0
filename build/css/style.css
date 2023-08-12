@@ -3431,6 +3431,11 @@ button,
 .trainers__btn--next {
   right: -56px;
 }
+@media (max-width: 1300px) {
+  .trainers__btn--next {
+    right: -18px;
+  }
+}
 @media (max-width: 1199px) {
   .trainers__btn--next {
     right: 25px;
@@ -3443,6 +3448,11 @@ button,
 }
 .trainers__btn--prev {
   left: -56px;
+}
+@media (max-width: 1300px) {
+  .trainers__btn--prev {
+    left: -18px;
+  }
 }
 @media (max-width: 1199px) {
   .trainers__btn--prev {
