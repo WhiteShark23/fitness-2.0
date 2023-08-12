@@ -37,11 +37,26 @@
   }
 }
 
+.reviews__wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 671px;
+
+  @include vp-1199 {
+    width: 678px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 0 32px;
+  }
+}
+
 .reviews__swiper {
   width: 560px;
 
   @include vp-767 {
-    width: 226px;
+    width: 100%;
   }
 }
 
@@ -72,6 +87,10 @@
       padding-top: 12px;
       margin-bottom: 23px;
     }
+
+    @include vp-349 {
+      margin-bottom: 40px;
+    }
   }
 
   p {
@@ -99,29 +118,29 @@
 }
 
 .reviews__btn {
-  margin-top: calc(41px - var(--swiper-navigation-size)/2);
+  margin-top: calc(-11px - var(--swiper-navigation-size)/2);
 
   @include vp-1199 {
-    margin-top: calc(33px - var(--swiper-navigation-size)/2);
+    margin-top: calc(-12px - var(--swiper-navigation-size)/2);
   }
 
   @include vp-767 {
-    margin-top: calc(38px - var(--swiper-navigation-size)/2);
+    margin-top: calc(-2px - var(--swiper-navigation-size)/2);
   }
 
   &--prew {
-    left: 20%;
+    left: -3%;
 
-    @include vp-1199 {
-      left: 3%;
+    @include vp-767 {
+      left: -2%;
     }
   }
 
   &--next {
-    right: 20%;
+    right: -3%;
 
-    @include vp-1199 {
-      right: 3%;
+    @include vp-767 {
+      right: -2%;
     }
   }
 }
