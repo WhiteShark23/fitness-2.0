@@ -45,15 +45,15 @@
       position: relative;
 
       &::after {
-      position: absolute;
-      display: none;
-      content: "";
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%);
-      width: calc(100% - 20px);
-      height: 1px;
-      background-color: $color-default-white;
+        position: absolute;
+        display: none;
+        content: "";
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: calc(100% - 20px);
+        height: 1px;
+        background-color: $color-default-white;
       }
 
       @include hover {
@@ -98,6 +98,7 @@
         height: auto;
         margin-left: 0;
       }
+
       svg {
         position: absolute;
         top: 0;
