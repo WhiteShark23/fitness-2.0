@@ -3895,6 +3895,16 @@ button,
   }
 */
 
+@media (max-width: 1300px) {
+  .trainers__btn--next {
+    right: -18px;
+  }
+
+  .trainers__btn--prev {
+    left: -18px;
+  }
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
