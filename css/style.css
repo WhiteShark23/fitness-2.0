@@ -2764,6 +2764,21 @@ button,
   margin-bottom: 48px;
 }
 
+.trainers__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.trainers__swiper {
+  margin: 0;
+}
+
 .trainers__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2790,6 +2805,8 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  top: 0;
+  left: 0;
   width: 260px;
   height: 100%;
 }
@@ -2859,15 +2876,15 @@ button,
 }
 
 .trainers__btn {
-  margin-top: calc(45px - var(--swiper-navigation-size) / 2);
+  margin-top: calc(-12px - var(--swiper-navigation-size) / 2);
 }
 
 .trainers__btn--next {
-  right: -56px;
+  right: -76px;
 }
 
 .trainers__btn--prev {
-  left: -56px;
+  left: -76px;
 }
 
 .advantages {
@@ -3386,7 +3403,7 @@ button,
   align-items: start;
   color: #ffffff;
   width: 50%;
-  padding: 56px 0 68px;
+  padding: 56px 0 74px;
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
@@ -3536,6 +3553,12 @@ button,
   margin-bottom: 37px;
 }
 
+.reviews__wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 671px;
+}
+
 .reviews__swiper {
   width: 560px;
 }
@@ -3582,15 +3605,15 @@ button,
 }
 
 .reviews__btn {
-  margin-top: calc(41px - var(--swiper-navigation-size) / 2);
+  margin-top: calc(-11px - var(--swiper-navigation-size) / 2);
 }
 
 .reviews__btn--prew {
-  left: 20%;
+  left: -3%;
 }
 
 .reviews__btn--next {
-  right: 20%;
+  right: -3%;
 }
 
 .video {
@@ -3897,11 +3920,11 @@ button,
 
 @media (max-width: 1300px) {
   .trainers__btn--next {
-    right: -18px;
+    right: -38px;
   }
 
   .trainers__btn--prev {
-    left: -18px;
+    left: -38px;
   }
 }
 
@@ -4145,20 +4168,25 @@ button,
     margin-bottom: 31px;
   }
 
+  .trainers__wrapper {
+    width: 678px;
+    padding: 0 32px;
+  }
+
   .trainers__swiper {
     max-width: 559px;
   }
 
   .trainers__btn {
-    margin-top: calc(30px - var(--swiper-navigation-size) / 2);
+    margin-top: calc(-11px - var(--swiper-navigation-size) / 2);
   }
 
   .trainers__btn--next {
-    right: 25px;
+    right: -20px;
   }
 
   .trainers__btn--prev {
-    left: 25px;
+    left: -20px;
   }
 
   .advantages--padding {
@@ -4385,7 +4413,7 @@ button,
 
   .connection__contacts {
     width: 100%;
-    padding: 62px 0 64px 88px;
+    padding: 67px 0 64px 88px;
   }
 
   .connection__contacts h2 {
@@ -4434,16 +4462,12 @@ button,
     margin-bottom: 40px;
   }
 
+  .reviews__wrapper {
+    width: 678px;
+  }
+
   .reviews__btn {
-    margin-top: calc(33px - var(--swiper-navigation-size) / 2);
-  }
-
-  .reviews__btn--prew {
-    left: 3%;
-  }
-
-  .reviews__btn--next {
-    right: 3%;
+    margin-top: calc(-12px - var(--swiper-navigation-size) / 2);
   }
 
   .video {
@@ -4765,8 +4789,20 @@ button,
     margin-bottom: 36px;
   }
 
+  .trainers__wrapper {
+    width: 100%;
+  }
+
+  .trainers__swiper {
+    max-width: 100%;
+  }
+
+  .trainers__item {
+    padding-top: 121.7777777778%;
+  }
+
   .trainers__info {
-    width: 226px;
+    width: 100%;
   }
 
   .trainers__info:focus:not(:disabled) h3 {
@@ -4779,20 +4815,23 @@ button,
   }
 
   .trainers__btn {
-    margin-top: calc(44px - var(--swiper-navigation-size) / 2);
+    margin-top: calc(0px - var(--swiper-navigation-size) / 2);
   }
 
   .trainers__btn--next {
-    right: 13px;
+    right: -6px;
   }
 
   .trainers__btn--prev {
-    left: 13px;
+    left: -6px;
   }
 
   .trainers__img img {
-    width: 226px;
-    height: 274px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .advantages--padding {
@@ -5054,7 +5093,7 @@ button,
   }
 
   .connection__contacts {
-    padding: 70px 0 63px;
+    padding: 75px 0 63px;
   }
 
   .connection__contacts h2 {
@@ -5087,8 +5126,13 @@ button,
     line-height: 38.4px;
   }
 
+  .reviews__wrapper {
+    width: 100%;
+    padding: 0 32px;
+  }
+
   .reviews__swiper {
-    width: 226px;
+    width: 100%;
   }
 
   .reviews__item {
@@ -5113,7 +5157,15 @@ button,
   }
 
   .reviews__btn {
-    margin-top: calc(38px - var(--swiper-navigation-size) / 2);
+    margin-top: calc(-2px - var(--swiper-navigation-size) / 2);
+  }
+
+  .reviews__btn--prew {
+    left: -2%;
+  }
+
+  .reviews__btn--next {
+    right: -2%;
   }
 
   .video {
@@ -5231,6 +5283,12 @@ button,
   .trainers__info:hover:not(:disabled) h3 {
     margin-bottom: 54px;
     margin-top: 44px;
+  }
+}
+
+@media (min-width: 349px) and (max-width: 767px) {
+  .reviews__item h3 {
+    margin-bottom: 40px;
   }
 }
 
