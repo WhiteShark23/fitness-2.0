@@ -3510,6 +3510,7 @@ button,
   list-style: none;
   padding: 0 46px 0 55px;
   display: none;
+  overflow: scroll;
 }
 @media (max-width: 767px) {
   .trainers__info-list {
