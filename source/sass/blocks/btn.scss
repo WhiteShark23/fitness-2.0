@@ -21,7 +21,7 @@
   &--hero {
     width: 233px;
     padding: 19px 20px;
-    border: 4px solid $color-default-white;
+    outline: 4px solid $color-default-white;
     text-transform: uppercase;
 
     @include hover-focus {

@@ -4,6 +4,7 @@ import {initTabs} from './modules/tabs/init-tabs';
 import {initSwiperFirst, initSwiperLast} from './modules/init-swiper';
 import {initAccordions} from './modules/accordions/init-accordion';
 import {initVideos} from './modules/inin-video';
+import {getScroll} from './modules/smooth-transition';
 
 
 // ---------------------------------
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    getScroll();
     initVideos();
     initTabs();
     initSwiperLast();

@@ -44,7 +44,7 @@
                   <h1>Фитнес центр</h1>
                   <span>Тренажёрный зал Групповые занятия Кардио-зона</span>
                 </div>
-                <button class="btn btn--hero" type="button">Купить абонемент</button>
+                <a class="btn btn--hero" href="#head1">Купить абонемент</a>
               </div>
               <div class="hero-block__img">
                 <picture>
@@ -93,7 +93,7 @@
             </div>
           </div>
         </section>
-        <section class="subscriptions subscriptions--padding">
+        <section class="subscriptions subscriptions--padding" id="head1">
           <div class="container">
             <h2>Абонементы</h2>
             <div class="tabs subscriptions__tabs" data-tabs="parent">
@@ -815,20 +815,28 @@
                 <h2>Контакты</h2>
                 <ul class="connection__list">
                   <li class="connection__item">
-                    <h3>Адрес:</h3>
-                    <a href="https://yandex.ru/maps/?text=Омск,ул.60летОктября,7">г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</a>
+                    <ul class="connection__item__wrapper">
+                      <li class="connection__item__wrapper-item">
+                        <h3>Адрес:</h3>
+                        <a href="https://yandex.ru/maps/?text=Омск,ул.60летОктября,7">г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</a>
+                      </li>
+                      <li class="connection__item__wrapper-item">
+                        <h3>График работы:</h3>
+                        <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+                      </li>
+                    </ul>
                   </li>
                   <li class="connection__item">
-                    <h3>График работы:</h3>
-                    <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
-                  </li>
-                  <li class="connection__item">
-                    <h3>Телефон:</h3>
-                    <a href="tel:+78005555555">8-800-555-55-55</a>
-                  </li>
-                  <li class="connection__item">
-                    <h3>Email:</h3>
-                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                    <ul class="connection__item__wrapper connection__item__wrapper--phone">
+                      <li class="connection__item__wrapper-item ">
+                        <h3>Телефон:</h3>
+                        <a href="tel:+78005555555">8-800-555-55-55</a>
+                      </li>
+                      <li class="connection__item__wrapper-item">
+                        <h3>Email:</h3>
+                        <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
