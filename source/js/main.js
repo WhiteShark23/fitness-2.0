@@ -6,7 +6,6 @@ import {initAccordions} from './modules/accordions/init-accordion';
 import {initVideos} from './modules/inin-video';
 import {getScroll} from './modules/smooth-transition';
 
-
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
