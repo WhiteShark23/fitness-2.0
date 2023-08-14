@@ -4532,6 +4532,10 @@ button,
     padding: 0;
   }
 
+  .custom-input {
+    width: 100%;
+  }
+
   .header-list--position {
     -webkit-box-align: center;
     -ms-flex-align: center;
