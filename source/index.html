@@ -801,12 +801,16 @@
         <section class="connection">
           <div class="container">
             <div class="connection__wrapper">
-              <div class="connection__form">
+              <div class="connection__form" data-form-validate>
                 <h2>Бесплатное занятие</h2>
                 <form action="#nowhere" method="get">
                   <div class="connection__form-input">
-                    <input type="text" aria-label="Введите ваше имя." placeholder="Имя" name="name" required>
-                    <input type="tel" aria-label="Введите ваш номер телефона." placeholder="Телефон" name="phone" required>
+                    <div class="custom-input" data-on-input-validate data-message-extra="Текст ошибки" data-message-base="Текст ошибки" data-validate-type="text", data-limitation="name" data-message-extra="Текст ошибки" data-required>
+                      <input type="text" aria-label="Введите ваше имя." placeholder="Имя" name="name" required>
+                    </div>
+                    <div class="custom-input" class="form-phone" data-validate-type="phone" data-on-input-validate data-message-extra="Текст ошибки" data-message-base="Текст ошибки" data-required>
+                      <input type="tel" aria-label="Введите ваш номер телефона." placeholder="Телефон" name="phone" aria-invalid="true" required>
+                    </div>
                   </div>
                   <button class="btn btn--form" type="submit">отправить</button>
                 </form>
