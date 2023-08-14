@@ -1462,6 +1462,11 @@ button,
 .custom-input {
   position: relative;
 }
+@media (max-width: 767px) {
+  .custom-input {
+    width: 100%;
+  }
+}
 .custom-input.is-invalid input {
   border-bottom: 1px solid #ed0233;
 }
