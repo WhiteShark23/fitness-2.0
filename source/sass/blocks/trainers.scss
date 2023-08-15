@@ -91,7 +91,8 @@
     width: 100%;
   }
 
-  @include hover-focus {
+  &:hover,
+  &:focus-within {
     background-color: rgba(16, 38, 84, 0.89);
 
     .trainers__info-list {

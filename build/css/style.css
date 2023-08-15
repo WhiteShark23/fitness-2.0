@@ -3344,36 +3344,18 @@ button,
     width: 100%;
   }
 }
-@media (hover: hover) {
-  .trainers__info:hover:not(:disabled) {
-    background-color: rgba(16, 38, 84, 0.89);
-  }
-  .trainers__info:hover:not(:disabled) .trainers__info-list {
-    display: block;
-  }
-  .trainers__info:hover:not(:disabled) h3 {
-    margin-top: 52px;
-    margin-bottom: 56px;
-  }
-}
-@media (hover: hover) and (max-width: 767px) {
-  .trainers__info:hover:not(:disabled) h3 {
-    margin-bottom: 54px;
-    margin-top: 44px;
-  }
-}
-.trainers__info:focus:not(:disabled) {
+.trainers__info:hover, .trainers__info:focus-within {
   background-color: rgba(16, 38, 84, 0.89);
 }
-.trainers__info:focus:not(:disabled) .trainers__info-list {
+.trainers__info:hover .trainers__info-list, .trainers__info:focus-within .trainers__info-list {
   display: block;
 }
-.trainers__info:focus:not(:disabled) h3 {
+.trainers__info:hover h3, .trainers__info:focus-within h3 {
   margin-top: 52px;
   margin-bottom: 56px;
 }
 @media (max-width: 767px) {
-  .trainers__info:focus:not(:disabled) h3 {
+  .trainers__info:hover h3, .trainers__info:focus-within h3 {
     margin-bottom: 54px;
     margin-top: 44px;
   }
