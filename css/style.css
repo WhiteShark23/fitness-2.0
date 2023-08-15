@@ -2785,15 +2785,18 @@ button,
   height: 100%;
 }
 
-.trainers__info:focus:not(:disabled) {
+.trainers__info:hover,
+.trainers__info:focus-within {
   background-color: rgba(16, 38, 84, 0.89);
 }
 
-.trainers__info:focus:not(:disabled) .trainers__info-list {
+.trainers__info:hover .trainers__info-list,
+.trainers__info:focus-within .trainers__info-list {
   display: block;
 }
 
-.trainers__info:focus:not(:disabled) h3 {
+.trainers__info:hover h3,
+.trainers__info:focus-within h3 {
   margin-top: 52px;
   margin-bottom: 56px;
 }
@@ -4838,7 +4841,8 @@ button,
     width: 100%;
   }
 
-  .trainers__info:focus:not(:disabled) h3 {
+  .trainers__info:hover h3,
+  .trainers__info:focus-within h3 {
     margin-bottom: 54px;
     margin-top: 44px;
   }
@@ -5279,13 +5283,6 @@ button,
   }
 }
 
-@media (hover: hover) and (max-width: 767px) {
-  .trainers__info:hover:not(:disabled) h3 {
-    margin-bottom: 54px;
-    margin-top: 44px;
-  }
-}
-
 @media (min-width: 349px) and (max-width: 767px) {
   .reviews__item h3 {
     margin-bottom: 40px;
@@ -5348,19 +5345,6 @@ button,
     background-image: linear-gradient(151deg, #ed0233 0%, #0041ca 100%);
     border: none;
     outline: none;
-  }
-
-  .trainers__info:hover:not(:disabled) {
-    background-color: rgba(16, 38, 84, 0.89);
-  }
-
-  .trainers__info:hover:not(:disabled) .trainers__info-list {
-    display: block;
-  }
-
-  .trainers__info:hover:not(:disabled) h3 {
-    margin-top: 52px;
-    margin-bottom: 56px;
   }
 
   .stock__link:hover:not(:disabled) {
