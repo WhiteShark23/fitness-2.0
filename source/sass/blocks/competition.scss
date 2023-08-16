@@ -15,11 +15,8 @@
 .competition__wrapper {
   display: flex;
   justify-content: center;
-
-  @include vp-767 {
-    flex-direction: column;
-    align-items: center;
-  }
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .competition__time {
@@ -34,6 +31,7 @@
   @include vp-1199 {
     padding: 43px 45px;
     gap: 0 29px;
+    min-height: 292px;
   }
 
   @include vp-767 {
