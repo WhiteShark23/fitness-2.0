@@ -7,7 +7,7 @@ export const initSwiperFirst = () => {
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 40,
+        spaceBetween: 30,
       },
       1200: {
         slidesPerView: 4,

@@ -3324,7 +3324,7 @@ button,
 }
 @media (max-width: 1199px) {
   .trainers__swiper {
-    max-width: 559px;
+    max-width: 567px;
   }
 }
 @media (max-width: 767px) {
@@ -3349,6 +3349,11 @@ button,
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 1199px) {
+  .trainers__item {
+    min-width: 268px;
+  }
+}
 @media (max-width: 767px) {
   .trainers__item {
     padding-top: 121.7777777778%;
@@ -3368,6 +3373,11 @@ button,
   left: 0;
   width: 260px;
   height: 100%;
+}
+@media (max-width: 1199px) {
+  .trainers__info {
+    width: 268px;
+  }
 }
 @media (max-width: 767px) {
   .trainers__info {
@@ -3495,6 +3505,12 @@ button,
   }
 }
 
+@media (max-width: 1199px) {
+  .trainers__img img {
+    width: 268px;
+    height: 294px;
+  }
+}
 @media (max-width: 767px) {
   .trainers__img img {
     position: absolute;
