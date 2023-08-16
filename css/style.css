@@ -4203,7 +4203,15 @@ button,
   }
 
   .trainers__swiper {
-    max-width: 559px;
+    max-width: 567px;
+  }
+
+  .trainers__item {
+    min-width: 268px;
+  }
+
+  .trainers__info {
+    width: 268px;
   }
 
   .trainers__btn {
@@ -4216,6 +4224,11 @@ button,
 
   .trainers__btn--prev {
     left: -20px;
+  }
+
+  .trainers__img img {
+    width: 268px;
+    height: 294px;
   }
 
   .advantages--padding {
