@@ -4954,7 +4954,7 @@ button,
 
   .advantages__item--simulators {
     width: 100%;
-    padding-bottom: 44px;
+    padding: 45px 45px 45px 44px;
     margin-bottom: 48px;
   }
 
