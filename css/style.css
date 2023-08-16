@@ -4565,6 +4565,10 @@ button,
     padding: 0;
   }
 
+  .container--advantages {
+    padding: 0;
+  }
+
   .custom-input {
     width: 100%;
   }
