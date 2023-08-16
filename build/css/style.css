@@ -3356,6 +3356,7 @@ button,
 }
 @media (max-width: 767px) {
   .trainers__item {
+    min-width: auto;
     padding-top: 121.7777777778%;
   }
 }

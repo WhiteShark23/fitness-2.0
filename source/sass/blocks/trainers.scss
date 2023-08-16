@@ -78,6 +78,7 @@
   }
 
   @include vp-767 {
+    min-width: auto;
     padding-top: calc(100% * 274 / 225);
   }
 }
