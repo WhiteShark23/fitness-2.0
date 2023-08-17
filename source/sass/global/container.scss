@@ -23,4 +23,17 @@
       padding: 0;
     }
   }
+
+  &--wide {
+    max-width: 1312px;
+    padding: 0 76px;
+
+    @include vp-1199 {
+      padding: 0 101px;
+    }
+
+    @include vp-767 {
+      padding: 0 43px;
+    }
+  }
 }

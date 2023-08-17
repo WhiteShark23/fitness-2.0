@@ -3,7 +3,7 @@
     margin-bottom: 105px;
 
     @include vp-1199 {
-      margin-bottom: 100px;
+      margin-bottom: 92px;
     }
 
     @include vp-767 {
@@ -26,7 +26,7 @@
       letter-spacing: 1.26px;
       line-height: 50.4px;
       text-align: center;
-      margin-bottom: 31px;
+      margin-bottom: 29px;
     }
 
     @include vp-767 {
@@ -39,47 +39,21 @@
 
 .trainers__wrapper {
   position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-
-  @include vp-1199 {
-    width: 678px;
-    padding: 0 32px;
-  }
-
-  @include vp-767 {
-    display: block;
-    width: 100%;
-  }
-}
-
-.trainers__swiper {
-  margin: 0;
-
-  @include vp-1199 {
-    max-width: 567px;
-  }
-
-  @include vp-767 {
-    max-width: 100%;
-  }
 }
 
 .trainers__item {
-  display: flex;
   position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: calc(25% - 30px);
 
   @include vp-1199 {
+    width: calc(50% - 15px);
     min-width: 268px;
   }
 
   @include vp-767 {
+    width: 100%;
     min-width: auto;
-    padding-top: calc(100% * 274 / 225);
+    min-height: 274px;
   }
 }
 
@@ -89,16 +63,8 @@
   flex-direction: column;
   top: 0;
   left: 0;
-  width: 260px;
+  width: 100%;
   height: 100%;
-
-  @include vp-1199 {
-    width: 268px;
-  }
-
-  @include vp-767 {
-    width: 100%;
-  }
 
   &:hover,
   &:focus-within {
@@ -183,51 +149,32 @@
   }
 
   &--next {
-    right: -76px;
-
-    @include vp-1300 {
-      right: -38px;
-    }
+    right: 0;
 
     @include vp-1199 {
-      right: -20px;
+      right: 25px;
     }
 
     @include vp-767 {
-      right: -6px;
+      right: 10px;
     }
   }
 
   &--prev {
-    left: -76px;
-
-    @include vp-1300 {
-      left: -38px;
-    }
+    left: 0;
 
     @include vp-1199 {
-      left: -20px;
+      left: 25px;
     }
 
     @include vp-767 {
-      left: -6px;
+      left: 10px;
     }
   }
 }
 
 .trainers__img {
   img {
-    @include vp-1199 {
-      width: 268px;
-      height: 294px;
-    }
-
-    @include vp-767 {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-    }
+    width: 100%;
   }
 }

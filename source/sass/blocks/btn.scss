@@ -78,6 +78,11 @@
       border: 1px solid $color-default-white;
       max-width: 202px;
     }
+
+    @include vp-767 {
+      max-width: none;
+      width: 100%;
+    }
   }
 
   &--aquamarine {

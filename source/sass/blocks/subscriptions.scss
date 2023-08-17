@@ -1,5 +1,6 @@
 .subscriptions {
   position: relative;
+  overflow-x: clip;
   background-color: $color-ghost-white;
 
   &::after {
@@ -80,9 +81,9 @@
 .subscriptions__tabs-controls {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 20px 0;
+  gap: 20px 46px;
   width: 341px;
   align-items: center;
   margin-left: auto;
@@ -104,12 +105,14 @@
   @include vp-1199 {
     flex-wrap: wrap;
     margin-bottom: 47px;
+    gap: 20px 57px;
   }
 
   @include vp-767 {
     width: auto;
     max-width: 400px;
     margin-bottom: 36px;
+    gap: 20px 46px;
   }
 }
 
@@ -205,6 +208,10 @@
     width: 206px;
     padding: 25px 20px;
 
+    @include vp-767 {
+      width: 100%;
+    }
+
     @include hover-focus {
       color: $color-default-white;
       background-image: linear-gradient(151deg, $color-torch-red 0%, $color-cobalt 100%);
@@ -227,8 +234,8 @@
   }
 
   @include vp-767 {
-    width: 290px;
-    padding: 43px 20px 46px;
+    width: 100%;
+    padding: 43px 33px 46px;
   }
 
   h3 {
