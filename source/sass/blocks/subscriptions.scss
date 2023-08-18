@@ -80,11 +80,12 @@
 
 .subscriptions__tabs-controls {
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 20px 46px;
+  display: grid;
+  gap: 20px 0;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
   width: 341px;
+  justify-items: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -105,14 +106,12 @@
   @include vp-1199 {
     flex-wrap: wrap;
     margin-bottom: 47px;
-    gap: 20px 57px;
   }
 
   @include vp-767 {
     width: auto;
     max-width: 400px;
     margin-bottom: 36px;
-    gap: 20px 46px;
   }
 }
 
