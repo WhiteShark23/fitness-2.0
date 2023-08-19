@@ -4824,10 +4824,6 @@ button,
   padding: 25px 20px;
   max-width: 343px;
 }
-.btn--competition:active:not(:disabled) {
-  background-color: #ffffff;
-  color: #102654;
-}
 @media (hover: hover) {
   .btn--competition:hover:not(:disabled) {
     background-color: #ffffff;
@@ -4837,6 +4833,10 @@ button,
 .btn--competition:focus:not(:disabled) {
   background-color: #ffffff;
   color: #103aae;
+}
+.btn--competition:active:not(:disabled) {
+  background-color: #ffffff;
+  color: #102654;
 }
 .btn--competition:disabled {
   opacity: 0.3;
