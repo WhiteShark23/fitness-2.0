@@ -5025,9 +5025,7 @@ button,
 .slider-btn:active:not(:disabled) {
   background-color: #102654;
   color: #ffffff;
-}
-
-/* @mixin hover-focus {
+} /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;

@@ -33,12 +33,6 @@
   }
 }
 
-@mixin active {
-  &:active:not(:disabled) {
-    @content;
-  }
-}
-
 @mixin hover-focus {
   @media (hover: hover) {
     &:hover:not(:disabled) {
@@ -47,6 +41,12 @@
   }
 
   &:focus:not(:disabled) {
+    @content;
+  }
+}
+
+@mixin active {
+  &:active:not(:disabled) {
     @content;
   }
 }
