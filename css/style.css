@@ -1670,6 +1670,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 20px;
+  margin-left: auto;
 }
 
 .header-list__contacts-item a {
@@ -3476,8 +3477,9 @@ button,
   position: relative;
   width: 42px;
   height: 42px;
-  outline: 1px solid #1c3374;
+  border: 1px solid #1c3374;
   border-radius: 50%;
+  outline: inherit;
   top: -7px;
 }
 
