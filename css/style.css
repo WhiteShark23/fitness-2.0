@@ -3453,14 +3453,14 @@ button,
   max-width: 343px;
 }
 
-.btn--competition:focus:not(:disabled) {
-  background-color: #ffffff;
-  color: #103aae;
-}
-
 .btn--competition:active:not(:disabled) {
   background-color: #ffffff;
   color: #102654;
+}
+
+.btn--competition:focus:not(:disabled) {
+  background-color: #ffffff;
+  color: #103aae;
 }
 
 .btn--competition:disabled {
