@@ -23,7 +23,7 @@
   }
 
   &--padding {
-    padding: 120px 0;
+    padding: 120px 0 118px;
     margin-bottom: 120px;
 
     @include vp-1199 {
@@ -90,7 +90,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 39px;
-  padding-bottom: 13px;
 
   &::after {
     position: absolute;
@@ -111,7 +110,7 @@
   @include vp-767 {
     width: auto;
     max-width: 400px;
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 }
 
@@ -119,6 +118,7 @@
   @include reset-list;
 
   cursor: pointer;
+  position: relative;
   min-width: auto;
   border: none;
   background-color: inherit;
@@ -126,6 +126,8 @@
   opacity: 0.5;
   font-size: 20px;
   line-height: 30px;
+  padding-bottom: 13px;
+  border-bottom: 2px solid transparent;
 
   @include vp-1199 {
     font-size: 18px;
@@ -140,19 +142,13 @@
   &.is-active {
     opacity: 1;
     pointer-events: none;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: $color-torch-red;
-    text-underline-offset: 19px;
+    border-color: $color-torch-red;
   }
 
   @include hover-focus {
     outline: inherit;
     opacity: 1;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: $color-torch-red;
-    text-underline-offset: 19px;
+    border-color: $color-torch-red;
   }
 
   &:disabled {

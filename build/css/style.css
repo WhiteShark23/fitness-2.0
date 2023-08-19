@@ -2268,7 +2268,7 @@ button,
   }
 }
 .subscriptions--padding {
-  padding: 120px 0;
+  padding: 120px 0 118px;
   margin-bottom: 120px;
 }
 @media (max-width: 1199px) {
@@ -2342,7 +2342,6 @@ button,
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 39px;
-  padding-bottom: 13px;
 }
 .subscriptions__tabs-controls::after {
   position: absolute;
@@ -2365,7 +2364,7 @@ button,
   .subscriptions__tabs-controls {
     width: auto;
     max-width: 400px;
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 }
 
@@ -2374,6 +2373,7 @@ button,
   padding: 0;
   list-style: none;
   cursor: pointer;
+  position: relative;
   min-width: auto;
   border: none;
   background-color: inherit;
@@ -2381,6 +2381,8 @@ button,
   opacity: 0.5;
   font-size: 20px;
   line-height: 30px;
+  padding-bottom: 13px;
+  border-bottom: 2px solid transparent;
 }
 @media (max-width: 1199px) {
   .subscriptions__tabs-control {
@@ -2397,31 +2399,19 @@ button,
 .subscriptions__tabs-control.is-active {
   opacity: 1;
   pointer-events: none;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  -webkit-text-decoration-color: #ed0233;
-          text-decoration-color: #ed0233;
-  text-underline-offset: 19px;
+  border-color: #ed0233;
 }
 @media (hover: hover) {
   .subscriptions__tabs-control:hover:not(:disabled) {
     outline: inherit;
     opacity: 1;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    -webkit-text-decoration-color: #ed0233;
-            text-decoration-color: #ed0233;
-    text-underline-offset: 19px;
+    border-color: #ed0233;
   }
 }
 .subscriptions__tabs-control:focus:not(:disabled) {
   outline: inherit;
   opacity: 1;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  -webkit-text-decoration-color: #ed0233;
-          text-decoration-color: #ed0233;
-  text-underline-offset: 19px;
+  border-color: #ed0233;
 }
 .subscriptions__tabs-control:disabled {
   opacity: 0.3;
