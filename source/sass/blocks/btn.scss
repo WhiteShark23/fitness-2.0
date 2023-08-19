@@ -57,14 +57,14 @@
     padding: 25px 20px;
     max-width: 343px;
 
-    @include hover-focus {
-      background-color: $color-default-white;
-      color: $color-egyptian-blue;
-    }
-
     @include active {
       background-color: $color-default-white;
       color: $color-sapphire;
+    }
+
+    @include hover-focus {
+      background-color: $color-default-white;
+      color: $color-egyptian-blue;
     }
 
     &:disabled {
