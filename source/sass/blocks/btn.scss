@@ -89,8 +89,9 @@
     position: relative;
     width: 42px;
     height: 42px;
-    outline: 1px solid $color-resolution-blue;
+    border: 1px solid $color-resolution-blue;
     border-radius: 50%;
+    outline: inherit;
     top: -7px;
 
     @include hover-focus {
