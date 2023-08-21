@@ -3769,6 +3769,11 @@ button,
           justify-content: center;
   min-width: 560px;
 }
+@media (max-width: 1199px) {
+  .stock__presentation {
+    min-width: 0;
+  }
+}
 @media (max-width: 767px) {
   .stock__presentation {
     -ms-flex-wrap: wrap;
