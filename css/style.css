@@ -4067,6 +4067,10 @@ button,
     margin-bottom: 59px;
   }
 
+  .stock__presentation {
+    min-width: 0;
+  }
+
   .stock__presentation-text {
     padding: 45px;
   }
