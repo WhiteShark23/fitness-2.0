@@ -1628,8 +1628,7 @@ button,
 }
 
 .header-list__item--width {
-  width: 68%;
-  margin-left: auto;
+  max-width: 68%;
 }
 
 .header-list__item--logo {
