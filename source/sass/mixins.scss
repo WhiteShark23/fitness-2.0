@@ -46,8 +46,10 @@
 }
 
 @mixin active {
-  &:active:not(:disabled) {
-    @content;
+  @media (hover: hover) {
+    &:active:not(:disabled) {
+      @content;
+    }
   }
 }
 
