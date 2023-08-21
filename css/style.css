@@ -4213,9 +4213,6 @@ button,
   }
 
   .header-list--position {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
     top: 0;
     padding: 15px;
   }
