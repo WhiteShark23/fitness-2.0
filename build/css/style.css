@@ -4076,6 +4076,15 @@ button,
     gap: 8px;
   }
 }
+@media (max-width: 767px) {
+  .faq__controls {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+}
 
 .faq__content {
   -webkit-box-flex: 1;
@@ -4258,7 +4267,7 @@ button,
   font-weight: 800;
   line-height: 84.24px;
   letter-spacing: 2.4px;
-  margin-bottom: 11px;
+  margin-bottom: 9px;
   -webkit-text-stroke: 1px;
 }
 @media (max-width: 1199px) {
@@ -4273,7 +4282,7 @@ button,
     line-height: 38.4px;
     letter-spacing: 0.96px;
     font-size: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -4996,7 +5005,7 @@ button,
 @media (max-width: 767px) {
   .btn--faq {
     font-size: 16px;
-    width: 141px;
+    width: 100%;
     padding: 14px;
   }
 }
