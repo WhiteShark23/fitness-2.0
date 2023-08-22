@@ -4777,6 +4777,11 @@ button,
 .video__control:disabled::after {
   background-image: url("/img/button-video-disabled.svg");
 }
+@media (hover: hover) {
+  .video__control:active:not(:disabled)::after {
+    background-image: url("/img/button-video-active.svg");
+  }
+}
 
 .video__player {
   display: none;
