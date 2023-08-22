@@ -4860,11 +4860,13 @@ button,
 }
 @media (hover: hover) {
   .btn--competition:hover:not(:disabled) {
+    outline: 4px solid #ffffff;
     background-color: #ffffff;
     color: #103aae;
   }
 }
 .btn--competition:focus:not(:disabled) {
+  outline: 4px solid #ffffff;
   background-color: #ffffff;
   color: #103aae;
 }

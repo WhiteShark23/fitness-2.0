@@ -58,6 +58,7 @@
     max-width: 343px;
 
     @include hover-focus {
+      outline: 4px solid $color-default-white;
       background-color: $color-default-white;
       color: $color-egyptian-blue;
     }
