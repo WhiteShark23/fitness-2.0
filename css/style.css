@@ -4989,6 +4989,10 @@ button,
     display: block;
   }
 
+  .navigation__item button:active:not(:disabled) {
+    outline: none;
+  }
+
   .navigation__item button:active:not(:disabled)::after {
     display: none;
   }
