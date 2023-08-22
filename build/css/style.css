@@ -5010,11 +5010,13 @@ button,
 }
 @media (hover: hover) {
   .btn--form:hover:not(:disabled) {
+    outline: 3px solid #ffffff;
     background-color: #ffffff;
     color: #103aae;
   }
 }
 .btn--form:focus:not(:disabled) {
+  outline: 3px solid #ffffff;
   background-color: #ffffff;
   color: #103aae;
 }
