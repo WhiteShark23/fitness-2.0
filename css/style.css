@@ -3079,7 +3079,7 @@ button,
   outline: none;
   color: inherit;
   background-color: inherit;
-  border: none;
+  border: 1px solid transparent;
   border-bottom: 1px solid #74819c;
   width: 190px;
   padding: 9px 15px;
@@ -3109,6 +3109,26 @@ button,
 .connection__form-input input:focus:not(:disabled) {
   border: 1px solid #ffffff;
   padding-left: 15px;
+}
+
+.connection__form-input input:focus:not(:disabled)::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.connection__form-input input:focus:not(:disabled)::-moz-placeholder {
+  color: transparent;
+}
+
+.connection__form-input input:focus:not(:disabled):-ms-input-placeholder {
+  color: transparent;
+}
+
+.connection__form-input input:focus:not(:disabled)::-ms-input-placeholder {
+  color: transparent;
+}
+
+.connection__form-input input:focus:not(:disabled)::placeholder {
+  color: transparent;
 }
 
 .connection__contacts {
@@ -5062,7 +5082,7 @@ button,
   }
 
   .connection__form-input input:hover:not(:disabled) {
-    border-color: #ffffff;
+    border-bottom: 1px solid #ffffff;
   }
 
   .connection__form-input input:active:not(:disabled) {
