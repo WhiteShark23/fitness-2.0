@@ -193,7 +193,7 @@
 
     .subscriptions__btn {
       background-image: linear-gradient(121deg, $color-torch-red 0%, $color-cobalt 100%);
-      border: none;
+      outline: none;
       color: $color-default-white;
     }
   }
@@ -209,7 +209,7 @@
 
     @include hover-focus {
       color: $color-default-white;
-      background-image: linear-gradient(151deg, $color-torch-red 0%, $color-cobalt 100%);
+      background-image: linear-gradient(121deg, $color-torch-red 0%, $color-cobalt 100%);
       border: none;
       outline: none;
     }
