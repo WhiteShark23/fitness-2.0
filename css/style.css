@@ -2134,7 +2134,7 @@ button,
 
 .subscriptions__item:focus:not(:disabled) .subscriptions__btn {
   background-image: linear-gradient(121deg, #ed0233 0%, #0041ca 100%);
-  border: none;
+  outline: none;
   color: #ffffff;
 }
 
@@ -2146,7 +2146,7 @@ button,
 
 .subscriptions__item .subscriptions__btn:focus:not(:disabled) {
   color: #ffffff;
-  background-image: linear-gradient(151deg, #ed0233 0%, #0041ca 100%);
+  background-image: linear-gradient(121deg, #ed0233 0%, #0041ca 100%);
   border: none;
   outline: none;
 }
@@ -5023,13 +5023,13 @@ button,
 
   .subscriptions__item:hover:not(:disabled) .subscriptions__btn {
     background-image: linear-gradient(121deg, #ed0233 0%, #0041ca 100%);
-    border: none;
+    outline: none;
     color: #ffffff;
   }
 
   .subscriptions__item .subscriptions__btn:hover:not(:disabled) {
     color: #ffffff;
-    background-image: linear-gradient(151deg, #ed0233 0%, #0041ca 100%);
+    background-image: linear-gradient(121deg, #ed0233 0%, #0041ca 100%);
     border: none;
     outline: none;
   }
