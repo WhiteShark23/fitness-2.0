@@ -3398,6 +3398,7 @@ button,
 }
 
 .btn--competition:focus:not(:disabled) {
+  outline: 4px solid #ffffff;
   background-color: #ffffff;
   color: #103aae;
 }
@@ -5096,6 +5097,7 @@ button,
   }
 
   .btn--competition:hover:not(:disabled) {
+    outline: 4px solid #ffffff;
     background-color: #ffffff;
     color: #103aae;
   }
