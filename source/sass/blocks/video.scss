@@ -78,13 +78,13 @@
 
   &:disabled {
     &::after {
-      background-image: url("/img/button-video-disabled.svg");
+      background-image: url("../img/button-video-disabled.svg");
     }
   }
 
   @include active {
     &::after {
-      background-image: url("/img/button-video-active.svg");
+      background-image: url("../img/button-video-active.svg");
     }
   }
 }
