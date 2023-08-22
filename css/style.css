@@ -5076,6 +5076,10 @@ button,
     background-image: url("../img/button-video-focus.svg");
   }
 
+  .video__control:active:not(:disabled)::after {
+    background-image: url("/img/button-video-active.svg");
+  }
+
   .btn--hero:hover:not(:disabled) {
     color: #103aae;
     background-color: #ffffff;
