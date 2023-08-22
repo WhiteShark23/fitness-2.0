@@ -4489,8 +4489,18 @@ button,
     margin-bottom: 0;
   }
 
+  .gym__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
   .gym__img {
+    position: relative;
     margin-bottom: 5px;
+    padding-top: 97.8125%;
+    width: 100%;
   }
 
   .gym__video {
