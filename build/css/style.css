@@ -2124,6 +2124,9 @@ button,
   outline: 1px solid #ffffff;
 }
 @media (hover: hover) {
+  .navigation__item button:active:not(:disabled) {
+    outline: none;
+  }
   .navigation__item button:active:not(:disabled)::after {
     display: none;
   }

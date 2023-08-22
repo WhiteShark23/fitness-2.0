@@ -59,6 +59,8 @@
     }
 
     @include active {
+      outline: none;
+
       &::after {
         display: none;
       }
