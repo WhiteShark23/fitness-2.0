@@ -115,7 +115,7 @@
     outline: none;
     color: inherit;
     background-color: inherit;
-    border: none;
+    border: 1px solid transparent;
     border-bottom: 1px solid $color-light-slate-grey;
     width: 190px;
     padding: 9px 15px;
@@ -134,7 +134,7 @@
     }
 
     @include hover {
-      border-color: $color-default-white;
+      border-bottom: 1px solid $color-default-white;
     }
 
     @include active {
@@ -145,6 +145,10 @@
     @include focus {
       border: 1px solid $color-default-white;
       padding-left: 15px;
+
+      &::placeholder {
+        color: transparent;
+      }
     }
   }
 }
