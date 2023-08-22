@@ -3495,6 +3495,7 @@ button,
 }
 
 .btn--form:focus:not(:disabled) {
+  outline: 3px solid #ffffff;
   background-color: #ffffff;
   color: #103aae;
 }
@@ -5122,6 +5123,7 @@ button,
   }
 
   .btn--form:hover:not(:disabled) {
+    outline: 3px solid #ffffff;
     background-color: #ffffff;
     color: #103aae;
   }
