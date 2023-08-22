@@ -3362,7 +3362,7 @@ button,
 }
 
 .video__control:disabled::after {
-  background-image: url("/img/button-video-disabled.svg");
+  background-image: url("../img/button-video-disabled.svg");
 }
 
 .video__player {
@@ -5121,7 +5121,7 @@ button,
   }
 
   .video__control:active:not(:disabled)::after {
-    background-image: url("/img/button-video-active.svg");
+    background-image: url("../img/button-video-active.svg");
   }
 
   .btn--hero:hover:not(:disabled) {
